@@ -1,0 +1,105 @@
+@import "tailwindcss";
+
+:root {
+  --bg-primary: #0D0D0E;
+  --bg-secondary: #161618;
+  --bg-card: #1D1D21;
+  --gold-accent: #D4AF37;
+  --gold-light: #F3E5AB;
+  --gold-gradient: linear-gradient(135deg, #D4AF37 0%, #F5E6CA 50%, #AA771C 100%);
+  --rose-accent: #E06D53;
+  --border-subtle: #2A2A30;
+  --text-primary: #F8F7F4;
+  --text-muted: #9E9EA8;
+}
+
+body {
+  background-color: #0D0D0E;
+  color: #F8F7F4;
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, .font-editorial {
+  font-family: 'Playfair Display', Georgia, serif;
+  letter-spacing: -0.015em;
+}
+
+.font-brand {
+  font-family: 'Cinzel', serif;
+  letter-spacing: 0.15em;
+}
+
+/* Luxury Gold Text Gradient */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #ECC86A 0%, #FDF7E7 40%, #D4AF37 80%, #C49826 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Glassmorphism Surface */
+.glass-panel {
+  background: rgba(22, 22, 24, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(212, 175, 55, 0.15);
+}
+
+.glass-dropdown {
+  background: rgba(18, 18, 20, 0.95);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0D0D0E;
+}
+::-webkit-scrollbar-thumb {
+  background: #2D2D35;
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #D4AF37;
+}
+
+/* Shimmer animation for skeleton states */
+@keyframes shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.shimmer-box {
+  position: relative;
+  overflow: hidden;
+  background-color: #1a1a1f;
+}
+.shimmer-box::after {
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  transform: translateX(-100%);
+  background-image: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0,
+    rgba(255, 255, 255, 0.05) 20%,
+    rgba(255, 255, 255, 0.1) 60%,
+    rgba(255, 255, 255, 0)
+  );
+  animation: shimmer 2s infinite;
+  content: '';
+}
+
+/* Hide scrollbar for stories carousel */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
