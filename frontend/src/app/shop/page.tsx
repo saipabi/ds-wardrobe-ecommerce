@@ -49,7 +49,9 @@ function ShopContent() {
     { name: 'Sandstone Beige', hex: '#D9C5B2' },
     { name: 'Terracotta Rust', hex: '#B85D43' },
     { name: 'Emerald Green', hex: '#0F4336' },
-    { name: 'Blush Rose', hex: '#DDA7A5' }
+    { name: 'Blush Rose', hex: '#DDA7A5' },
+    { name: 'Royal Sapphire', hex: '#1A365D' },
+    { name: 'Ivory Pearl', hex: '#F7F5F0' }
   ];
 
   useEffect(() => {

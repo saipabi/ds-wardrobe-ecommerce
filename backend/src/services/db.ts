@@ -109,6 +109,14 @@ class DatabaseManager {
   }
 
   public get db(): DatabaseSchema {
+    try {
+      if (fs.existsSync(DB_FILE)) {
+        const fileContent = fs.readFileSync(DB_FILE, 'utf-8');
+        this.data = JSON.parse(fileContent);
+      }
+    } catch (err) {
+      // fallback to in-memory cache
+    }
     return this.data;
   }
 }

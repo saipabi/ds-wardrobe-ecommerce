@@ -75,7 +75,7 @@
           "colorHex": "#D4AF37",
           "price": 4999,
           "sale_price": 3499,
-          "inventory_quantity": 4,
+          "inventory_quantity": 5,
           "in_stock": true
         },
         {
@@ -178,8 +178,8 @@
           "size": "XS",
           "color": "Sandstone Beige",
           "colorHex": "#D9C5B2",
-          "price": 3999,
-          "sale_price": 2899,
+          "price": 5499,
+          "sale_price": 4299,
           "inventory_quantity": 3,
           "in_stock": true
         },
@@ -191,9 +191,9 @@
           "size": "S",
           "color": "Sandstone Beige",
           "colorHex": "#D9C5B2",
-          "price": 3999,
-          "sale_price": 2899,
-          "inventory_quantity": 8,
+          "price": 5499,
+          "sale_price": 4299,
+          "inventory_quantity": 6,
           "in_stock": true
         },
         {
@@ -204,8 +204,8 @@
           "size": "M",
           "color": "Sandstone Beige",
           "colorHex": "#D9C5B2",
-          "price": 3999,
-          "sale_price": 2899,
+          "price": 5499,
+          "sale_price": 4299,
           "inventory_quantity": 5,
           "in_stock": true
         },
@@ -217,8 +217,8 @@
           "size": "S",
           "color": "Terracotta Rust",
           "colorHex": "#B85D43",
-          "price": 3999,
-          "sale_price": 2899,
+          "price": 5499,
+          "sale_price": 4299,
           "inventory_quantity": 4,
           "in_stock": true
         },
@@ -230,8 +230,8 @@
           "size": "M",
           "color": "Terracotta Rust",
           "colorHex": "#B85D43",
-          "price": 3999,
-          "sale_price": 2899,
+          "price": 5499,
+          "sale_price": 4299,
           "inventory_quantity": 2,
           "in_stock": true
         }
@@ -239,30 +239,30 @@
     },
     {
       "id": "prod_noor_velvet",
-      "title": "Noor Handcrafted Sequin Velvet Kurta Set",
-      "handle": "noor-handcrafted-sequin-velvet-kurta-set",
-      "subtitle": "Micro-velvet straight kurta with zari embroidery & organza dupatta",
-      "description": "A testament to regal festivities. Opulent deep wine micro-velvet adorned with delicate gota-patti and cut-dana hand embroidery on the neck and cuffs. Accompanied by silk-floss trousers and a sheer embellished dupatta.",
+      "title": "The Noor Embroidered Velvet Kurta Set",
+      "handle": "noor-embroidered-velvet-kurta-set",
+      "subtitle": "Regal micro-velvet straight kurta with tissue silk dupatta",
+      "description": "An heirloom festive masterpiece. Tailored in deep wine plush micro-velvet, adorned with intricate antique gold tilla and zardozi threadwork along the neckline and cuffs. Paired with straight-cut velvet pants and an ethereal tissue silk dupatta.",
       "category": "Festive & Fusion",
       "collection": "Royal Heritage Edition",
       "thumbnail": "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=800&q=80",
       "images": [
         "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=1000&q=80",
-        "https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=1000&q=80"
+        "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=1000&q=80"
       ],
       "tags": [
         "Festive",
-        "Ethnic",
         "Velvet",
         "Kurta Set",
-        "Wedding"
+        "Zardozi",
+        "Wedding Edit"
       ],
-      "material": "Pure Micro Velvet 9000 with Silk-Santoon lining",
-      "care_instructions": "Professional dry clean only. Store wrapped in muslin cloth.",
+      "material": "9000 Micro Velvet with Pure Tissue Silk Dupatta",
+      "care_instructions": "Specialist dry clean only. Preserve in cotton muslin bag.",
       "size_guide": {
-        "chest": "36-44 in",
-        "waist": "30-38 in",
-        "hip": "38-46 in",
+        "chest": "36-42 in",
+        "waist": "30-36 in",
+        "hip": "38-44 in",
         "length": "Kurta 46 in / Pant 38 in"
       },
       "model_info": "Model is 5'7\" wearing Size M.",
@@ -272,8 +272,8 @@
       "is_featured": true,
       "is_new_arrival": false,
       "is_best_seller": true,
-      "created_at": "2026-09-10T10:00:00Z",
-      "updated_at": "2026-10-05T12:00:00Z",
+      "created_at": "2026-09-18T10:00:00Z",
+      "updated_at": "2026-10-04T12:00:00Z",
       "variants": [
         {
           "id": "var_noor_wine_s",
@@ -283,8 +283,8 @@
           "size": "S",
           "color": "Deep Wine",
           "colorHex": "#5B1425",
-          "price": 7999,
-          "sale_price": 5499,
+          "price": 8999,
+          "sale_price": 6499,
           "inventory_quantity": 4,
           "in_stock": true
         },
@@ -296,9 +296,9 @@
           "size": "M",
           "color": "Deep Wine",
           "colorHex": "#5B1425",
-          "price": 7999,
-          "sale_price": 5499,
-          "inventory_quantity": 6,
+          "price": 8999,
+          "sale_price": 6499,
+          "inventory_quantity": 5,
           "in_stock": true
         },
         {
@@ -309,291 +309,201 @@
           "size": "L",
           "color": "Deep Wine",
           "colorHex": "#5B1425",
-          "price": 7999,
-          "sale_price": 5499,
+          "price": 8999,
+          "sale_price": 6499,
           "inventory_quantity": 3,
           "in_stock": true
         },
         {
-          "id": "var_noor_wine_xl",
+          "id": "var_noor_emerald_m",
           "product_id": "prod_noor_velvet",
-          "title": "Deep Wine / XL",
-          "sku": "DS-NOOR-DW-XL",
-          "size": "XL",
-          "color": "Deep Wine",
-          "colorHex": "#5B1425",
-          "price": 7999,
-          "sale_price": 5499,
-          "inventory_quantity": 2,
-          "in_stock": true
-        },
-        {
-          "id": "var_noor_navy_m",
-          "product_id": "prod_noor_velvet",
-          "title": "Midnight Navy / M",
-          "sku": "DS-NOOR-MN-M",
+          "title": "Emerald Green / M",
+          "sku": "DS-NOOR-EG-M",
           "size": "M",
-          "color": "Midnight Navy",
-          "colorHex": "#151C38",
-          "price": 7999,
-          "sale_price": 5499,
-          "inventory_quantity": 5,
+          "color": "Emerald Green",
+          "colorHex": "#0F4336",
+          "price": 8999,
+          "sale_price": 6499,
+          "inventory_quantity": 4,
           "in_stock": true
         }
       ]
     },
     {
-      "id": "prod_zuri_corset",
-      "title": "Zuri Structured Corset Midi Dress",
-      "handle": "zuri-structured-corset-midi-dress",
-      "subtitle": "Architectural sweetheart corset with flared tea-length skirt",
-      "description": "Designed to sculpt and flatter. Features integrated flexible spiral steel boning, structured cups, and an ultra-feminine A-line midi skirt with functional side pockets.",
-      "category": "Dresses",
+      "id": "prod_organza_shirt",
+      "title": "Aria Glass Organza Statement Shirt",
+      "handle": "aria-glass-organza-statement-shirt",
+      "subtitle": "Sheer balloon-sleeve shirt with French exaggerated cuffs",
+      "description": "Architectural drama meets delicate luxury. The Aria shirt is crafted in translucent glass organza with a structured collar, dramatic pleated balloon sleeves, and shell button accents. Comes with a complimentary matching satin camisole.",
+      "category": "Tops & Shirts",
       "collection": "Midnight Runway Drop",
-      "thumbnail": "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?auto=format&fit=crop&w=800&q=80",
+      "thumbnail": "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=800&q=80",
       "images": [
-        "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?auto=format&fit=crop&w=1000&q=80",
-        "https://images.unsplash.com/photo-1502716119720-b23a93e5fe1b?auto=format&fit=crop&w=1000&q=80"
+        "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=1000&q=80"
       ],
       "tags": [
-        "Corset",
-        "Midi Dress",
+        "Tops",
+        "Organza",
+        "Sheer",
         "Cocktail",
-        "Party Wear"
+        "Runway"
       ],
-      "material": "Structured Cotton-Twill Blend with Satin Inner Yoke",
-      "care_instructions": "Delicate dry clean.",
+      "material": "100% Crisp Silk Organza with Poly-Satin Slip",
+      "care_instructions": "Gentle cold hand wash or dry clean. Do not wring.",
       "size_guide": {
-        "chest": "32-36 in",
-        "waist": "25-29 in",
-        "hip": "36-40 in",
-        "length": "47 in"
+        "chest": "32-38 in",
+        "waist": "26-32 in",
+        "hip": "Free",
+        "length": "24 in"
       },
-      "model_info": "Model is 5'8\" wearing Size XS.",
+      "model_info": "Model is 5'8\" wearing Size S.",
       "status": "published",
       "rating": 4.7,
       "reviews_count": 14,
       "is_featured": false,
       "is_new_arrival": true,
       "is_best_seller": false,
-      "created_at": "2026-09-25T10:00:00Z",
-      "updated_at": "2026-10-06T12:00:00Z",
+      "created_at": "2026-09-22T10:00:00Z",
+      "updated_at": "2026-10-02T12:00:00Z",
       "variants": [
         {
-          "id": "var_zuri_blush_xs",
-          "product_id": "prod_zuri_corset",
-          "title": "Blush Rose / XS",
-          "sku": "DS-ZUR-BR-XS",
+          "id": "var_aria_ivory_xs",
+          "product_id": "prod_organza_shirt",
+          "title": "Ivory Pearl / XS",
+          "sku": "DS-ARI-IV-XS",
           "size": "XS",
-          "color": "Blush Rose",
-          "colorHex": "#DDA7A5",
-          "price": 4499,
-          "sale_price": 3199,
-          "inventory_quantity": 2,
+          "color": "Ivory Pearl",
+          "colorHex": "#F7F5F0",
+          "price": 3499,
+          "sale_price": 2799,
+          "inventory_quantity": 3,
           "in_stock": true
         },
         {
-          "id": "var_zuri_blush_s",
-          "product_id": "prod_zuri_corset",
-          "title": "Blush Rose / S",
-          "sku": "DS-ZUR-BR-S",
+          "id": "var_aria_ivory_s",
+          "product_id": "prod_organza_shirt",
+          "title": "Ivory Pearl / S",
+          "sku": "DS-ARI-IV-S",
           "size": "S",
-          "color": "Blush Rose",
-          "colorHex": "#DDA7A5",
-          "price": 4499,
-          "sale_price": 3199,
+          "color": "Ivory Pearl",
+          "colorHex": "#F7F5F0",
+          "price": 3499,
+          "sale_price": 2799,
+          "inventory_quantity": 6,
+          "in_stock": true
+        },
+        {
+          "id": "var_aria_black_s",
+          "product_id": "prod_organza_shirt",
+          "title": "Obsidian Black / S",
+          "sku": "DS-ARI-OB-S",
+          "size": "S",
+          "color": "Obsidian Black",
+          "colorHex": "#111111",
+          "price": 3499,
+          "sale_price": 2799,
           "inventory_quantity": 5,
-          "in_stock": true
-        },
-        {
-          "id": "var_zuri_black_s",
-          "product_id": "prod_zuri_corset",
-          "title": "Midnight Black / S",
-          "sku": "DS-ZUR-MB-S",
-          "size": "S",
-          "color": "Midnight Black",
-          "colorHex": "#0A0A0A",
-          "price": 4499,
-          "sale_price": 3199,
-          "inventory_quantity": 7,
-          "in_stock": true
-        },
-        {
-          "id": "var_zuri_black_m",
-          "product_id": "prod_zuri_corset",
-          "title": "Midnight Black / M",
-          "sku": "DS-ZUR-MB-M",
-          "size": "M",
-          "color": "Midnight Black",
-          "colorHex": "#0A0A0A",
-          "price": 4499,
-          "sale_price": 3199,
-          "inventory_quantity": 4,
           "in_stock": true
         }
       ]
     },
     {
-      "id": "prod_seraphina_shirt",
-      "title": "Seraphina Silk Organza Statement Shirt",
-      "handle": "seraphina-silk-organza-statement-shirt",
-      "subtitle": "Sheer glass organza button-down with exaggerated French cuffs",
-      "description": "The pinnacle of power dressing. Semi-sheer organza with an elongated point collar, mother-of-pearl buttons, and voluminous sleeves. Includes a tonal stretch camisole.",
-      "category": "Tops & Shirts",
+      "id": "prod_corset_midi",
+      "title": "Seraphina Sculpted Corset Midi Dress",
+      "handle": "seraphina-sculpted-corset-midi-dress",
+      "subtitle": "Internal boning corset with hourglass crepe pencil skirt",
+      "description": "Engineered to contour and empower. The Seraphina midi features internal flexible steel boning, sculpted sweetheart cups, and a heavy crepe pencil skirt with a back walking vent.",
+      "category": "Dresses",
       "collection": "Midnight Runway Drop",
-      "thumbnail": "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=800&q=80",
+      "thumbnail": "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?auto=format&fit=crop&w=800&q=80",
       "images": [
-        "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=1000&q=80",
-        "https://images.unsplash.com/photo-1518049362265-d5b2a6467637?auto=format&fit=crop&w=1000&q=80"
+        "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?auto=format&fit=crop&w=1000&q=80"
       ],
       "tags": [
-        "Shirt",
-        "Organza",
-        "Luxe",
-        "Office to Evening"
+        "Cocktail",
+        "Corset",
+        "Midi",
+        "Party",
+        "Bodycon"
       ],
-      "material": "100% Crisp Silk-Organza with Viscose Camisole",
-      "care_instructions": "Gentle hand wash cold or dry clean.",
+      "material": "Bonded Italian Stretch Crepe with Cupro Lining",
+      "care_instructions": "Professional dry clean only.",
       "size_guide": {
-        "chest": "34-40 in",
-        "waist": "free",
-        "hip": "free",
-        "length": "27 in"
+        "chest": "32-36 in",
+        "waist": "24-28 in",
+        "hip": "34-38 in",
+        "length": "44 in"
       },
       "model_info": "Model is 5'9\" wearing Size S.",
       "status": "published",
       "rating": 4.9,
       "reviews_count": 22,
-      "is_featured": false,
-      "is_new_arrival": true,
-      "is_best_seller": false,
-      "created_at": "2026-09-28T10:00:00Z",
-      "updated_at": "2026-10-07T12:00:00Z",
-      "variants": [
-        {
-          "id": "var_sera_champ_s",
-          "product_id": "prod_seraphina_shirt",
-          "title": "Champagne Cream / S",
-          "sku": "DS-SER-CC-S",
-          "size": "S",
-          "color": "Champagne Cream",
-          "colorHex": "#F5E6CA",
-          "price": 2699,
-          "sale_price": 1899,
-          "inventory_quantity": 6,
-          "in_stock": true
-        },
-        {
-          "id": "var_sera_champ_m",
-          "product_id": "prod_seraphina_shirt",
-          "title": "Champagne Cream / M",
-          "sku": "DS-SER-CC-M",
-          "size": "M",
-          "color": "Champagne Cream",
-          "colorHex": "#F5E6CA",
-          "price": 2699,
-          "sale_price": 1899,
-          "inventory_quantity": 8,
-          "in_stock": true
-        },
-        {
-          "id": "var_sera_mauve_s",
-          "product_id": "prod_seraphina_shirt",
-          "title": "Mauve Glow / S",
-          "sku": "DS-SER-MG-S",
-          "size": "S",
-          "color": "Mauve Glow",
-          "colorHex": "#B38D97",
-          "price": 2699,
-          "sale_price": 1899,
-          "inventory_quantity": 4,
-          "in_stock": true
-        }
-      ]
-    },
-    {
-      "id": "prod_elora_pleated",
-      "title": "Elora Pleated Shimmer Wrap Co-ord",
-      "handle": "elora-pleated-shimmer-wrap-coord",
-      "subtitle": "Micro-plisse metallic wrap top & fluid palazzo set",
-      "description": "Catching the light with every step, the Elora set features intricate micro-accordion pleats woven with delicate lurex threads. Perfect for high-energy cocktail nights.",
-      "category": "Co-ord Sets",
-      "collection": "Midnight Runway Drop",
-      "thumbnail": "https://images.unsplash.com/photo-1550614000-4895a10e1bfd?auto=format&fit=crop&w=800&q=80",
-      "images": [
-        "https://images.unsplash.com/photo-1550614000-4895a10e1bfd?auto=format&fit=crop&w=1000&q=80"
-      ],
-      "tags": [
-        "Co-ord",
-        "Pleated",
-        "Shimmer",
-        "Party Wear"
-      ],
-      "material": "Lurex Metallic Micro-Plisse Poly blend",
-      "care_instructions": "Hand wash cold. Do not iron pleats.",
-      "size_guide": {
-        "chest": "32-38 in",
-        "waist": "26-32 in",
-        "hip": "36-42 in",
-        "length": "Top 20 in / Pant 42 in"
-      },
-      "model_info": "Model is 5'7\" wearing Size S.",
-      "status": "published",
-      "rating": 4.8,
-      "reviews_count": 17,
       "is_featured": true,
       "is_new_arrival": false,
       "is_best_seller": true,
-      "created_at": "2026-09-18T10:00:00Z",
-      "updated_at": "2026-10-04T12:00:00Z",
+      "created_at": "2026-09-12T10:00:00Z",
+      "updated_at": "2026-10-05T12:00:00Z",
       "variants": [
         {
-          "id": "var_elora_rosegold_s",
-          "product_id": "prod_elora_pleated",
-          "title": "Rose Gold / S",
-          "sku": "DS-ELO-RG-S",
+          "id": "var_ser_black_xs",
+          "product_id": "prod_corset_midi",
+          "title": "Obsidian Black / XS",
+          "sku": "DS-SER-OB-XS",
+          "size": "XS",
+          "color": "Obsidian Black",
+          "colorHex": "#111111",
+          "price": 5499,
+          "sale_price": 3899,
+          "inventory_quantity": 2,
+          "in_stock": true
+        },
+        {
+          "id": "var_ser_black_s",
+          "product_id": "prod_corset_midi",
+          "title": "Obsidian Black / S",
+          "sku": "DS-SER-OB-S",
           "size": "S",
-          "color": "Rose Gold",
-          "colorHex": "#C88E88",
-          "price": 4599,
-          "sale_price": 3299,
+          "color": "Obsidian Black",
+          "colorHex": "#111111",
+          "price": 5499,
+          "sale_price": 3899,
           "inventory_quantity": 5,
           "in_stock": true
         },
         {
-          "id": "var_elora_rosegold_m",
-          "product_id": "prod_elora_pleated",
-          "title": "Rose Gold / M",
-          "sku": "DS-ELO-RG-M",
+          "id": "var_ser_black_m",
+          "product_id": "prod_corset_midi",
+          "title": "Obsidian Black / M",
+          "sku": "DS-SER-OB-M",
           "size": "M",
-          "color": "Rose Gold",
-          "colorHex": "#C88E88",
-          "price": 4599,
-          "sale_price": 3299,
-          "inventory_quantity": 3,
+          "color": "Obsidian Black",
+          "colorHex": "#111111",
+          "price": 5499,
+          "sale_price": 3899,
+          "inventory_quantity": 4,
           "in_stock": true
         },
         {
-          "id": "var_elora_bronze_s",
-          "product_id": "prod_elora_pleated",
-          "title": "Metallic Bronze / S",
-          "sku": "DS-ELO-MB-S",
+          "id": "var_ser_wine_s",
+          "product_id": "prod_corset_midi",
+          "title": "Deep Wine / S",
+          "sku": "DS-SER-DW-S",
           "size": "S",
-          "color": "Metallic Bronze",
-          "colorHex": "#825C43",
-          "price": 4599,
-          "sale_price": 3299,
-          "inventory_quantity": 4,
+          "color": "Deep Wine",
+          "colorHex": "#5B1425",
+          "price": 5499,
+          "sale_price": 3899,
+          "inventory_quantity": 3,
           "in_stock": true
         }
       ]
     },
     {
-      "id": "prod_aria_trouser",
-      "title": "Aria High-Waist Wide-Leg Pleated Trousers",
-      "handle": "aria-high-waist-wide-leg-pleated-trousers",
-      "subtitle": "Double front pleats with tailored drape crepe",
-      "description": "The quintessential modern staple. Designed with razor-sharp front pleats, slant pockets, and a fluid wide-leg cut that falls effortlessly over heels or chunky sneakers.",
+      "id": "prod_satin_cargo",
+      "title": "Sienna Double-Pleated Fluid Satin Trousers",
+      "handle": "sienna-double-pleated-satin-trousers",
+      "subtitle": "High-waist wide-leg pants tailored with French drape",
+      "description": "The epitome of day-to-night versatility. The Sienna trousers are cut with generous double front pleats and side slant pockets from heavyweight fluid satin that puddles gracefully over heels.",
       "category": "Trousers & Skirts",
       "collection": "Sun-Drenched Resort & Street",
       "thumbnail": "https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=800&q=80",
@@ -601,102 +511,321 @@
         "https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=1000&q=80"
       ],
       "tags": [
-        "Trousers",
-        "Tailored",
-        "Wide Leg",
-        "Essentials"
+        "Bottoms",
+        "Satin",
+        "Wide-Leg",
+        "Tailored"
       ],
-      "material": "Heavy Crepe Suiting with gentle stretch",
-      "care_instructions": "Machine wash cold or dry clean. Medium steam iron.",
+      "material": "Premium Liquid Poly-Satin",
+      "care_instructions": "Dry clean or hand wash cold.",
       "size_guide": {
         "chest": "N/A",
         "waist": "26-32 in",
-        "hip": "36-42 in",
+        "hip": "38-44 in",
         "length": "42 in"
       },
-      "model_info": "Model is 5'9\" wearing Size S.",
+      "model_info": "Model is 5'8\" wearing Size S.",
       "status": "published",
-      "rating": 4.9,
-      "reviews_count": 31,
+      "rating": 4.8,
+      "reviews_count": 16,
       "is_featured": false,
       "is_new_arrival": false,
       "is_best_seller": true,
-      "created_at": "2026-09-08T10:00:00Z",
+      "created_at": "2026-09-19T10:00:00Z",
       "updated_at": "2026-10-02T12:00:00Z",
       "variants": [
         {
-          "id": "var_aria_taupe_xs",
-          "product_id": "prod_aria_trouser",
-          "title": "Camel Taupe / XS",
-          "sku": "DS-ARI-CT-XS",
-          "size": "XS",
-          "color": "Camel Taupe",
-          "colorHex": "#8C705F",
-          "price": 2799,
-          "sale_price": 1999,
+          "id": "var_sien_champ_s",
+          "product_id": "prod_satin_cargo",
+          "title": "Champagne Gold / S",
+          "sku": "DS-SIEN-CG-S",
+          "size": "S",
+          "color": "Champagne Gold",
+          "colorHex": "#D4AF37",
+          "price": 3999,
+          "sale_price": 2999,
           "inventory_quantity": 4,
           "in_stock": true
         },
         {
-          "id": "var_aria_taupe_s",
-          "product_id": "prod_aria_trouser",
-          "title": "Camel Taupe / S",
-          "sku": "DS-ARI-CT-S",
-          "size": "S",
-          "color": "Camel Taupe",
-          "colorHex": "#8C705F",
-          "price": 2799,
-          "sale_price": 1999,
-          "inventory_quantity": 9,
+          "id": "var_sien_champ_m",
+          "product_id": "prod_satin_cargo",
+          "title": "Champagne Gold / M",
+          "sku": "DS-SIEN-CG-M",
+          "size": "M",
+          "color": "Champagne Gold",
+          "colorHex": "#D4AF37",
+          "price": 3999,
+          "sale_price": 2999,
+          "inventory_quantity": 5,
           "in_stock": true
         },
         {
-          "id": "var_aria_taupe_m",
-          "product_id": "prod_aria_trouser",
-          "title": "Camel Taupe / M",
-          "sku": "DS-ARI-CT-M",
-          "size": "M",
-          "color": "Camel Taupe",
-          "colorHex": "#8C705F",
-          "price": 2799,
-          "sale_price": 1999,
+          "id": "var_sien_black_s",
+          "product_id": "prod_satin_cargo",
+          "title": "Obsidian Black / S",
+          "sku": "DS-SIEN-OB-S",
+          "size": "S",
+          "color": "Obsidian Black",
+          "colorHex": "#111111",
+          "price": 3999,
+          "sale_price": 2999,
           "inventory_quantity": 6,
           "in_stock": true
         },
         {
-          "id": "var_aria_black_s",
-          "product_id": "prod_aria_trouser",
-          "title": "Pitch Black / S",
-          "sku": "DS-ARI-PB-S",
-          "size": "S",
-          "color": "Pitch Black",
-          "colorHex": "#121212",
-          "price": 2799,
-          "sale_price": 1999,
-          "inventory_quantity": 11,
-          "in_stock": true
-        },
-        {
-          "id": "var_aria_black_m",
-          "product_id": "prod_aria_trouser",
-          "title": "Pitch Black / M",
-          "sku": "DS-ARI-PB-M",
-          "size": "M",
-          "color": "Pitch Black",
-          "colorHex": "#121212",
-          "price": 2799,
-          "sale_price": 1999,
-          "inventory_quantity": 7,
+          "id": "var_sien_black_l",
+          "product_id": "prod_satin_cargo",
+          "title": "Obsidian Black / L",
+          "sku": "DS-SIEN-OB-L",
+          "size": "L",
+          "color": "Obsidian Black",
+          "colorHex": "#111111",
+          "price": 3999,
+          "sale_price": 2999,
+          "inventory_quantity": 3,
           "in_stock": true
         }
       ]
     },
     {
-      "id": "prod_jahan_brocade",
-      "title": "Jahan Banarasi Brocade Crop Jacket & Skirt Set",
-      "handle": "jahan-banarasi-brocade-jacket-skirt-set",
-      "subtitle": "Heritage gold zari woven motif jacket with kalidar maxi skirt",
-      "description": "Rooted in timeless royal craft. Features an architectural high-neck cropped jacket in authentic Banarasi brocade, fastened with jewel buttons, paired with a pleated voluminous skirt.",
+      "id": "prod_sequin_wrap",
+      "title": "The Sitara Heavily Sequined Wrap Gown",
+      "handle": "sitara-heavily-sequined-wrap-gown",
+      "subtitle": "Dazzling champagne micro-sequins with cinched waist",
+      "description": "Designed for grand soirees and sangeet nights. The Sitara wrap gown catches light from every angle with thousands of micro metallic sequins hand-embellished onto sheer tulle.",
+      "category": "Festive & Fusion",
+      "collection": "Royal Heritage Edition",
+      "thumbnail": "https://images.unsplash.com/photo-1518895949257-7621c3c786d7?auto=format&fit=crop&w=800&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1518895949257-7621c3c786d7?auto=format&fit=crop&w=1000&q=80"
+      ],
+      "tags": [
+        "Festive",
+        "Sequin",
+        "Gown",
+        "Wedding",
+        "Statement"
+      ],
+      "material": "Metallic Micro-Sequins on Fine Nylon Tulle with Satin Lining",
+      "care_instructions": "Specialist spot clean or dry clean only.",
+      "size_guide": {
+        "chest": "34-38 in",
+        "waist": "26-32 in",
+        "hip": "36-42 in",
+        "length": "58 in"
+      },
+      "model_info": "Model is 5'9\" wearing Size S.",
+      "status": "published",
+      "rating": 4.9,
+      "reviews_count": 26,
+      "is_featured": true,
+      "is_new_arrival": true,
+      "is_best_seller": false,
+      "created_at": "2026-09-24T10:00:00Z",
+      "updated_at": "2026-10-06T12:00:00Z",
+      "variants": [
+        {
+          "id": "var_sit_champ_s",
+          "product_id": "prod_sequin_wrap",
+          "title": "Champagne Gold / S",
+          "sku": "DS-SIT-CG-S",
+          "size": "S",
+          "color": "Champagne Gold",
+          "colorHex": "#D4AF37",
+          "price": 9999,
+          "sale_price": 7999,
+          "inventory_quantity": 3,
+          "in_stock": true
+        },
+        {
+          "id": "var_sit_champ_m",
+          "product_id": "prod_sequin_wrap",
+          "title": "Champagne Gold / M",
+          "sku": "DS-SIT-CG-M",
+          "size": "M",
+          "color": "Champagne Gold",
+          "colorHex": "#D4AF37",
+          "price": 9999,
+          "sale_price": 7999,
+          "inventory_quantity": 4,
+          "in_stock": true
+        },
+        {
+          "id": "var_sit_sapph_s",
+          "product_id": "prod_sequin_wrap",
+          "title": "Royal Sapphire / S",
+          "sku": "DS-SIT-RS-S",
+          "size": "S",
+          "color": "Royal Sapphire",
+          "colorHex": "#1A365D",
+          "price": 9999,
+          "sale_price": 7999,
+          "inventory_quantity": 2,
+          "in_stock": true
+        }
+      ]
+    },
+    {
+      "id": "prod_blazer_suit",
+      "title": "Elysian Double-Breasted Power Blazer Suit",
+      "handle": "elysian-double-breasted-power-blazer-suit",
+      "subtitle": "Sharp shoulder tailored blazer paired with cigarette trousers",
+      "description": "Runway authority tailored for the modern woman. Featuring peak satin lapels, padded structured shoulders, tortoise buttons, and slim tapered cigarette trousers.",
+      "category": "Co-ord Sets",
+      "collection": "Midnight Runway Drop",
+      "thumbnail": "https://images.unsplash.com/photo-1548624149-f9b1859aa9d0?auto=format&fit=crop&w=800&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1548624149-f9b1859aa9d0?auto=format&fit=crop&w=1000&q=80"
+      ],
+      "tags": [
+        "Co-ord",
+        "Blazer",
+        "Power Dressing",
+        "Suit"
+      ],
+      "material": "Premium Suiting Gabardine with Duchess Satin Trim",
+      "care_instructions": "Dry clean only. Steam iron.",
+      "size_guide": {
+        "chest": "34-40 in",
+        "waist": "26-32 in",
+        "hip": "36-42 in",
+        "length": "Blazer 28 in / Pant 39 in"
+      },
+      "model_info": "Model is 5'9\" wearing Size S.",
+      "status": "published",
+      "rating": 4.8,
+      "reviews_count": 17,
+      "is_featured": false,
+      "is_new_arrival": false,
+      "is_best_seller": true,
+      "created_at": "2026-09-10T10:00:00Z",
+      "updated_at": "2026-10-01T12:00:00Z",
+      "variants": [
+        {
+          "id": "var_ely_black_s",
+          "product_id": "prod_blazer_suit",
+          "title": "Obsidian Black / S",
+          "sku": "DS-ELY-OB-S",
+          "size": "S",
+          "color": "Obsidian Black",
+          "colorHex": "#111111",
+          "price": 6999,
+          "sale_price": 5499,
+          "inventory_quantity": 5,
+          "in_stock": true
+        },
+        {
+          "id": "var_ely_black_m",
+          "product_id": "prod_blazer_suit",
+          "title": "Obsidian Black / M",
+          "sku": "DS-ELY-OB-M",
+          "size": "M",
+          "color": "Obsidian Black",
+          "colorHex": "#111111",
+          "price": 6999,
+          "sale_price": 5499,
+          "inventory_quantity": 4,
+          "in_stock": true
+        },
+        {
+          "id": "var_ely_beige_m",
+          "product_id": "prod_blazer_suit",
+          "title": "Sandstone Beige / M",
+          "sku": "DS-ELY-SB-M",
+          "size": "M",
+          "color": "Sandstone Beige",
+          "colorHex": "#D9C5B2",
+          "price": 6999,
+          "sale_price": 5499,
+          "inventory_quantity": 3,
+          "in_stock": true
+        }
+      ]
+    },
+    {
+      "id": "prod_celeste_gown",
+      "title": "Celeste Liquid Satin Halter Evening Gown",
+      "handle": "celeste-liquid-satin-halter-gown",
+      "subtitle": "High-neck halter evening gown with dramatic low back",
+      "description": "An arresting statement in fluid luxury. Cut on the bias to hug the hips effortlessly, the Celeste gown features a gathered mock neck, sweeping puddle train, and open back.",
+      "category": "Dresses",
+      "collection": "Midnight Runway Drop",
+      "thumbnail": "https://images.unsplash.com/photo-1566174053879-31528523f8ae?auto=format&fit=crop&w=800&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1566174053879-31528523f8ae?auto=format&fit=crop&w=1000&q=80"
+      ],
+      "tags": [
+        "Evening",
+        "Gown",
+        "Halter",
+        "Runway"
+      ],
+      "material": "100% Ultra-Fluid Crepe-Back Satin",
+      "care_instructions": "Dry clean only.",
+      "size_guide": {
+        "chest": "32-36 in",
+        "waist": "25-29 in",
+        "hip": "35-39 in",
+        "length": "59 in"
+      },
+      "model_info": "Model is 5'10\" wearing Size S.",
+      "status": "published",
+      "rating": 4.9,
+      "reviews_count": 21,
+      "is_featured": true,
+      "is_new_arrival": true,
+      "is_best_seller": false,
+      "created_at": "2026-09-28T10:00:00Z",
+      "updated_at": "2026-10-08T12:00:00Z",
+      "variants": [
+        {
+          "id": "var_cel_sapph_s",
+          "product_id": "prod_celeste_gown",
+          "title": "Royal Sapphire / S",
+          "sku": "DS-CEL-RS-S",
+          "size": "S",
+          "color": "Royal Sapphire",
+          "colorHex": "#1A365D",
+          "price": 5999,
+          "sale_price": 4499,
+          "inventory_quantity": 4,
+          "in_stock": true
+        },
+        {
+          "id": "var_cel_sapph_m",
+          "product_id": "prod_celeste_gown",
+          "title": "Royal Sapphire / M",
+          "sku": "DS-CEL-RS-M",
+          "size": "M",
+          "color": "Royal Sapphire",
+          "colorHex": "#1A365D",
+          "price": 5999,
+          "sale_price": 4499,
+          "inventory_quantity": 3,
+          "in_stock": true
+        },
+        {
+          "id": "var_cel_black_s",
+          "product_id": "prod_celeste_gown",
+          "title": "Obsidian Black / S",
+          "sku": "DS-CEL-OB-S",
+          "size": "S",
+          "color": "Obsidian Black",
+          "colorHex": "#111111",
+          "price": 5999,
+          "sale_price": 4499,
+          "inventory_quantity": 5,
+          "in_stock": true
+        }
+      ]
+    },
+    {
+      "id": "prod_miraya_brocade",
+      "title": "Miraya Banarasi Brocade Festive Set",
+      "handle": "miraya-banarasi-brocade-festive-set",
+      "subtitle": "Handwoven zari brocade bustier with pleated A-line skirt",
+      "description": "Rooted in Indian textile royalty. Woven with heritage gold motifs, the Miraya set includes a structured sweetheart corset top and a high-waist flared circle skirt with pocket details.",
       "category": "Festive & Fusion",
       "collection": "Royal Heritage Edition",
       "thumbnail": "https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=800&q=80",
@@ -707,64 +836,990 @@
         "Festive",
         "Brocade",
         "Banarasi",
-        "Luxury",
-        "Occasion"
+        "Lehenga",
+        "Wedding"
       ],
-      "material": "Hand-loom Banarasi Katan Silk with metallic zari",
-      "care_instructions": "Strictly dry clean.",
+      "material": "Pure Silk Banarasi Brocade with Gold Zari",
+      "care_instructions": "Specialist dry clean only.",
       "size_guide": {
-        "chest": "34-42 in",
-        "waist": "28-36 in",
-        "hip": "38-46 in",
-        "length": "Jacket 16 in / Skirt 43 in"
+        "chest": "34-38 in",
+        "waist": "26-32 in",
+        "hip": "Free",
+        "length": "Skirt 42 in"
       },
-      "model_info": "Model is 5'7\" wearing Size M.",
+      "model_info": "Model is 5'7\" wearing Size S.",
       "status": "published",
       "rating": 5,
-      "reviews_count": 12,
+      "reviews_count": 29,
       "is_featured": true,
-      "is_new_arrival": true,
-      "is_best_seller": false,
-      "created_at": "2026-10-01T10:00:00Z",
-      "updated_at": "2026-10-08T12:00:00Z",
+      "is_new_arrival": false,
+      "is_best_seller": true,
+      "created_at": "2026-09-14T10:00:00Z",
+      "updated_at": "2026-10-02T12:00:00Z",
       "variants": [
         {
-          "id": "var_jahan_purple_s",
-          "product_id": "prod_jahan_brocade",
-          "title": "Royal Purple & Gold / S",
-          "sku": "DS-JAH-RP-S",
+          "id": "var_mir_emerald_s",
+          "product_id": "prod_miraya_brocade",
+          "title": "Emerald Green / S",
+          "sku": "DS-MIR-EG-S",
           "size": "S",
-          "color": "Royal Purple",
-          "colorHex": "#4B2354",
+          "color": "Emerald Green",
+          "colorHex": "#0F4336",
           "price": 8999,
-          "sale_price": 6299,
+          "sale_price": 6999,
           "inventory_quantity": 3,
           "in_stock": true
         },
         {
-          "id": "var_jahan_purple_m",
-          "product_id": "prod_jahan_brocade",
-          "title": "Royal Purple & Gold / M",
-          "sku": "DS-JAH-RP-M",
+          "id": "var_mir_emerald_m",
+          "product_id": "prod_miraya_brocade",
+          "title": "Emerald Green / M",
+          "sku": "DS-MIR-EG-M",
           "size": "M",
-          "color": "Royal Purple",
-          "colorHex": "#4B2354",
+          "color": "Emerald Green",
+          "colorHex": "#0F4336",
           "price": 8999,
-          "sale_price": 6299,
+          "sale_price": 6999,
           "inventory_quantity": 4,
           "in_stock": true
         },
         {
-          "id": "var_jahan_ruby_m",
-          "product_id": "prod_jahan_brocade",
-          "title": "Crimson Ruby / M",
-          "sku": "DS-JAH-CR-M",
-          "size": "M",
-          "color": "Crimson Ruby",
-          "colorHex": "#8B1E2B",
+          "id": "var_mir_wine_s",
+          "product_id": "prod_miraya_brocade",
+          "title": "Deep Wine / S",
+          "sku": "DS-MIR-DW-S",
+          "size": "S",
+          "color": "Deep Wine",
+          "colorHex": "#5B1425",
           "price": 8999,
-          "sale_price": 6299,
+          "sale_price": 6999,
           "inventory_quantity": 2,
+          "in_stock": true
+        }
+      ]
+    },
+    {
+      "id": "prod_zoya_coord",
+      "title": "The Zoya Asymmetric Draped Co-ord Set",
+      "handle": "zoya-asymmetric-draped-coord-set",
+      "subtitle": "One-shoulder cascading sash top with fluid drape trousers",
+      "description": "Modern holiday glamour redefined. The Zoya set showcases an asymmetric one-shoulder cape top and fluid straight-leg pants tailored in lightweight terracotta textured crepe.",
+      "category": "Co-ord Sets",
+      "collection": "Sun-Drenched Resort & Street",
+      "thumbnail": "https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=800&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=1000&q=80"
+      ],
+      "tags": [
+        "Co-ord",
+        "Resort",
+        "Asymmetric",
+        "Sunset"
+      ],
+      "material": "100% Textured Air-Flow Poly Crepe",
+      "care_instructions": "Cold delicate wash.",
+      "size_guide": {
+        "chest": "32-38 in",
+        "waist": "26-32 in",
+        "hip": "36-42 in",
+        "length": "Pant 40 in"
+      },
+      "model_info": "Model is 5'8\" wearing Size S.",
+      "status": "published",
+      "rating": 4.8,
+      "reviews_count": 15,
+      "is_featured": false,
+      "is_new_arrival": true,
+      "is_best_seller": false,
+      "created_at": "2026-09-25T10:00:00Z",
+      "updated_at": "2026-10-07T12:00:00Z",
+      "variants": [
+        {
+          "id": "var_zoy_rust_s",
+          "product_id": "prod_zoya_coord",
+          "title": "Terracotta Rust / S",
+          "sku": "DS-ZOY-TR-S",
+          "size": "S",
+          "color": "Terracotta Rust",
+          "colorHex": "#B85D43",
+          "price": 4999,
+          "sale_price": 3999,
+          "inventory_quantity": 4,
+          "in_stock": true
+        },
+        {
+          "id": "var_zoy_rust_m",
+          "product_id": "prod_zoya_coord",
+          "title": "Terracotta Rust / M",
+          "sku": "DS-ZOY-TR-M",
+          "size": "M",
+          "color": "Terracotta Rust",
+          "colorHex": "#B85D43",
+          "price": 4999,
+          "sale_price": 3999,
+          "inventory_quantity": 5,
+          "in_stock": true
+        },
+        {
+          "id": "var_zoy_beige_m",
+          "product_id": "prod_zoya_coord",
+          "title": "Sandstone Beige / M",
+          "sku": "DS-ZOY-SB-M",
+          "size": "M",
+          "color": "Sandstone Beige",
+          "colorHex": "#D9C5B2",
+          "price": 4999,
+          "sale_price": 3999,
+          "inventory_quantity": 3,
+          "in_stock": true
+        }
+      ]
+    },
+    {
+      "id": "prod_isla_mini",
+      "title": "Isla Sculpted Ruched Satin Mini Dress",
+      "handle": "isla-sculpted-ruched-satin-mini-dress",
+      "subtitle": "Drawstring side ruching with structured square neckline",
+      "description": "Flirty, feminine, and sculpting. The Isla mini features adjustable side drawstrings that let you customize the hemline length, paired with a clean square neckline and subtle shoulder caps.",
+      "category": "Dresses",
+      "collection": "Midnight Runway Drop",
+      "thumbnail": "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=800&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=1000&q=80"
+      ],
+      "tags": [
+        "Party",
+        "Mini Dress",
+        "Ruched",
+        "Cocktail"
+      ],
+      "material": "95% Stretch Satin, 5% Elastane",
+      "care_instructions": "Cold hand wash.",
+      "size_guide": {
+        "chest": "32-36 in",
+        "waist": "24-28 in",
+        "hip": "34-38 in",
+        "length": "33 in"
+      },
+      "model_info": "Model is 5'7\" wearing Size XS.",
+      "status": "published",
+      "rating": 4.7,
+      "reviews_count": 18,
+      "is_featured": false,
+      "is_new_arrival": false,
+      "is_best_seller": true,
+      "created_at": "2026-09-17T10:00:00Z",
+      "updated_at": "2026-10-03T12:00:00Z",
+      "variants": [
+        {
+          "id": "var_isla_blush_xs",
+          "product_id": "prod_isla_mini",
+          "title": "Blush Rose / XS",
+          "sku": "DS-ISL-BR-XS",
+          "size": "XS",
+          "color": "Blush Rose",
+          "colorHex": "#DDA7A5",
+          "price": 3999,
+          "sale_price": 2999,
+          "inventory_quantity": 4,
+          "in_stock": true
+        },
+        {
+          "id": "var_isla_blush_s",
+          "product_id": "prod_isla_mini",
+          "title": "Blush Rose / S",
+          "sku": "DS-ISL-BR-S",
+          "size": "S",
+          "color": "Blush Rose",
+          "colorHex": "#DDA7A5",
+          "price": 3999,
+          "sale_price": 2999,
+          "inventory_quantity": 6,
+          "in_stock": true
+        },
+        {
+          "id": "var_isla_black_s",
+          "product_id": "prod_isla_mini",
+          "title": "Obsidian Black / S",
+          "sku": "DS-ISL-OB-S",
+          "size": "S",
+          "color": "Obsidian Black",
+          "colorHex": "#111111",
+          "price": 3999,
+          "sale_price": 2999,
+          "inventory_quantity": 5,
+          "in_stock": true
+        }
+      ]
+    },
+    {
+      "id": "prod_kavya_saree",
+      "title": "Kavya Handcrafted Zari Organza Saree Set",
+      "handle": "kavya-handcrafted-zari-organza-saree-set",
+      "subtitle": "Tissue organza 6-yard saree with readymade embroidered blouse",
+      "description": "Pure heirloom sophistication. Crafted from glistening tissue organza with delicate hand-scalloped zari borders. Accompanied by a fully stitched padded sweet-heart blouse adorned with pearls.",
+      "category": "Festive & Fusion",
+      "collection": "Royal Heritage Edition",
+      "thumbnail": "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=800&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=1000&q=80"
+      ],
+      "tags": [
+        "Festive",
+        "Saree",
+        "Organza",
+        "Zari",
+        "Wedding"
+      ],
+      "material": "Pure Tissue Organza with Zari Scalloping",
+      "care_instructions": "Dry clean only. Roll fold.",
+      "size_guide": {
+        "chest": "34-38 in (Blouse)",
+        "waist": "Free",
+        "hip": "Free",
+        "length": "5.5 meters"
+      },
+      "model_info": "Model is 5'8\" wearing Blouse Size S.",
+      "status": "published",
+      "rating": 5,
+      "reviews_count": 31,
+      "is_featured": true,
+      "is_new_arrival": false,
+      "is_best_seller": true,
+      "created_at": "2026-09-11T10:00:00Z",
+      "updated_at": "2026-10-01T12:00:00Z",
+      "variants": [
+        {
+          "id": "var_kav_ivory_s",
+          "product_id": "prod_kavya_saree",
+          "title": "Ivory Pearl / S",
+          "sku": "DS-KAV-IV-S",
+          "size": "S",
+          "color": "Ivory Pearl",
+          "colorHex": "#F7F5F0",
+          "price": 10999,
+          "sale_price": 8499,
+          "inventory_quantity": 3,
+          "in_stock": true
+        },
+        {
+          "id": "var_kav_ivory_m",
+          "product_id": "prod_kavya_saree",
+          "title": "Ivory Pearl / M",
+          "sku": "DS-KAV-IV-M",
+          "size": "M",
+          "color": "Ivory Pearl",
+          "colorHex": "#F7F5F0",
+          "price": 10999,
+          "sale_price": 8499,
+          "inventory_quantity": 4,
+          "in_stock": true
+        },
+        {
+          "id": "var_kav_champ_s",
+          "product_id": "prod_kavya_saree",
+          "title": "Champagne Gold / S",
+          "sku": "DS-KAV-CG-S",
+          "size": "S",
+          "color": "Champagne Gold",
+          "colorHex": "#D4AF37",
+          "price": 10999,
+          "sale_price": 8499,
+          "inventory_quantity": 2,
+          "in_stock": true
+        }
+      ]
+    },
+    {
+      "id": "prod_luna_top",
+      "title": "Luna Off-Shoulder Sculpted Corset Top",
+      "handle": "luna-off-shoulder-sculpted-corset-top",
+      "subtitle": "Draped off-shoulder sleeves with Basque waistline",
+      "description": "Architectural cocktail styling. The Luna top features soft off-shoulder mesh sleeves, a structured basque waist, and eyelet lace-up rear fastening.",
+      "category": "Tops & Shirts",
+      "collection": "Midnight Runway Drop",
+      "thumbnail": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1000&q=80"
+      ],
+      "tags": [
+        "Tops",
+        "Corset",
+        "Off-Shoulder",
+        "Evening"
+      ],
+      "material": "Stretch Crepe with Power Mesh Sleeves",
+      "care_instructions": "Hand wash cold.",
+      "size_guide": {
+        "chest": "32-36 in",
+        "waist": "24-28 in",
+        "hip": "N/A",
+        "length": "16 in"
+      },
+      "model_info": "Model is 5'7\" wearing Size XS.",
+      "status": "published",
+      "rating": 4.8,
+      "reviews_count": 12,
+      "is_featured": false,
+      "is_new_arrival": true,
+      "is_best_seller": false,
+      "created_at": "2026-09-27T10:00:00Z",
+      "updated_at": "2026-10-09T12:00:00Z",
+      "variants": [
+        {
+          "id": "var_lun_black_xs",
+          "product_id": "prod_luna_top",
+          "title": "Obsidian Black / XS",
+          "sku": "DS-LUN-OB-XS",
+          "size": "XS",
+          "color": "Obsidian Black",
+          "colorHex": "#111111",
+          "price": 2999,
+          "sale_price": 2299,
+          "inventory_quantity": 5,
+          "in_stock": true
+        },
+        {
+          "id": "var_lun_black_s",
+          "product_id": "prod_luna_top",
+          "title": "Obsidian Black / S",
+          "sku": "DS-LUN-OB-S",
+          "size": "S",
+          "color": "Obsidian Black",
+          "colorHex": "#111111",
+          "price": 2999,
+          "sale_price": 2299,
+          "inventory_quantity": 6,
+          "in_stock": true
+        },
+        {
+          "id": "var_lun_blush_s",
+          "product_id": "prod_luna_top",
+          "title": "Blush Rose / S",
+          "sku": "DS-LUN-BR-S",
+          "size": "S",
+          "color": "Blush Rose",
+          "colorHex": "#DDA7A5",
+          "price": 2999,
+          "sale_price": 2299,
+          "inventory_quantity": 4,
+          "in_stock": true
+        }
+      ]
+    },
+    {
+      "id": "prod_ophelia_dress",
+      "title": "Ophelia Tiered Chiffon Maxi Sundress",
+      "handle": "ophelia-tiered-chiffon-maxi-sundress",
+      "subtitle": "Breezy tiered ruffle hem with tie-up shoulder ribbons",
+      "description": "Effortlessly romantic. Tailored in airy georgette chiffon with tiered ruffles, smocked stretch bodice, and delicate ribbon ties on the shoulders.",
+      "category": "Dresses",
+      "collection": "Sun-Drenched Resort & Street",
+      "thumbnail": "https://images.unsplash.com/photo-1469334031218-e382a71b716b?auto=format&fit=crop&w=800&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1469334031218-e382a71b716b?auto=format&fit=crop&w=1000&q=80"
+      ],
+      "tags": [
+        "Resort",
+        "Maxi",
+        "Chiffon",
+        "Sundress"
+      ],
+      "material": "100% Breathable Georgette with Modal Lining",
+      "care_instructions": "Delicate machine wash.",
+      "size_guide": {
+        "chest": "32-38 in (Smocked)",
+        "waist": "26-32 in",
+        "hip": "Free",
+        "length": "54 in"
+      },
+      "model_info": "Model is 5'9\" wearing Size S.",
+      "status": "published",
+      "rating": 4.7,
+      "reviews_count": 14,
+      "is_featured": false,
+      "is_new_arrival": false,
+      "is_best_seller": false,
+      "created_at": "2026-09-16T10:00:00Z",
+      "updated_at": "2026-10-02T12:00:00Z",
+      "variants": [
+        {
+          "id": "var_oph_rust_s",
+          "product_id": "prod_ophelia_dress",
+          "title": "Terracotta Rust / S",
+          "sku": "DS-OPH-TR-S",
+          "size": "S",
+          "color": "Terracotta Rust",
+          "colorHex": "#B85D43",
+          "price": 4499,
+          "sale_price": 3599,
+          "inventory_quantity": 4,
+          "in_stock": true
+        },
+        {
+          "id": "var_oph_rust_m",
+          "product_id": "prod_ophelia_dress",
+          "title": "Terracotta Rust / M",
+          "sku": "DS-OPH-TR-M",
+          "size": "M",
+          "color": "Terracotta Rust",
+          "colorHex": "#B85D43",
+          "price": 4499,
+          "sale_price": 3599,
+          "inventory_quantity": 5,
+          "in_stock": true
+        },
+        {
+          "id": "var_oph_beige_m",
+          "product_id": "prod_ophelia_dress",
+          "title": "Sandstone Beige / M",
+          "sku": "DS-OPH-SB-M",
+          "size": "M",
+          "color": "Sandstone Beige",
+          "colorHex": "#D9C5B2",
+          "price": 4499,
+          "sale_price": 3599,
+          "inventory_quantity": 3,
+          "in_stock": true
+        }
+      ]
+    },
+    {
+      "id": "prod_ananya_palazzo",
+      "title": "Ananya High-Waist Fluid Satin Palazzos",
+      "handle": "ananya-high-waist-satin-palazzos",
+      "subtitle": "Voluminous wide-leg culottes with concealed side zipper",
+      "description": "Flowing movement for evening soirees. The Ananya palazzos cascade like a skirt with extra-wide leg hems and a clean contoured waistband.",
+      "category": "Trousers & Skirts",
+      "collection": "Midnight Runway Drop",
+      "thumbnail": "https://images.unsplash.com/photo-1551803091-e20673f15770?auto=format&fit=crop&w=800&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1551803091-e20673f15770?auto=format&fit=crop&w=1000&q=80"
+      ],
+      "tags": [
+        "Bottoms",
+        "Palazzo",
+        "Satin",
+        "Evening"
+      ],
+      "material": "Fluid Heavy Crepe Satin",
+      "care_instructions": "Dry clean only.",
+      "size_guide": {
+        "chest": "N/A",
+        "waist": "26-32 in",
+        "hip": "38-44 in",
+        "length": "42 in"
+      },
+      "model_info": "Model is 5'8\" wearing Size S.",
+      "status": "published",
+      "rating": 4.8,
+      "reviews_count": 11,
+      "is_featured": false,
+      "is_new_arrival": false,
+      "is_best_seller": false,
+      "created_at": "2026-09-21T10:00:00Z",
+      "updated_at": "2026-10-04T12:00:00Z",
+      "variants": [
+        {
+          "id": "var_ana_wine_s",
+          "product_id": "prod_ananya_palazzo",
+          "title": "Deep Wine / S",
+          "sku": "DS-ANA-DW-S",
+          "size": "S",
+          "color": "Deep Wine",
+          "colorHex": "#5B1425",
+          "price": 3499,
+          "sale_price": 2699,
+          "inventory_quantity": 4,
+          "in_stock": true
+        },
+        {
+          "id": "var_ana_wine_m",
+          "product_id": "prod_ananya_palazzo",
+          "title": "Deep Wine / M",
+          "sku": "DS-ANA-DW-M",
+          "size": "M",
+          "color": "Deep Wine",
+          "colorHex": "#5B1425",
+          "price": 3499,
+          "sale_price": 2699,
+          "inventory_quantity": 5,
+          "in_stock": true
+        },
+        {
+          "id": "var_ana_black_l",
+          "product_id": "prod_ananya_palazzo",
+          "title": "Obsidian Black / L",
+          "sku": "DS-ANA-OB-L",
+          "size": "L",
+          "color": "Obsidian Black",
+          "colorHex": "#111111",
+          "price": 3499,
+          "sale_price": 2699,
+          "inventory_quantity": 3,
+          "in_stock": true
+        }
+      ]
+    },
+    {
+      "id": "prod_rhea_tweed",
+      "title": "The Rhea Monochromatic Tweed Co-ord Suit",
+      "handle": "rhea-monochromatic-tweed-coord-suit",
+      "subtitle": "Textured bouclé cropped jacket with matching A-line skirt",
+      "description": "Old money aesthetic crafted for the modern muse. Handwoven metallic-thread tweed with pearl-encrusted gold buttons, fringed hems, and satin inner lining.",
+      "category": "Co-ord Sets",
+      "collection": "Midnight Runway Drop",
+      "thumbnail": "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=800&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1000&q=80"
+      ],
+      "tags": [
+        "Co-ord",
+        "Tweed",
+        "Vintage",
+        "Suit",
+        "Luxury"
+      ],
+      "material": "Woven Bouclé Tweed with Silk Lining",
+      "care_instructions": "Professional dry clean only.",
+      "size_guide": {
+        "chest": "34-38 in",
+        "waist": "26-30 in",
+        "hip": "36-40 in",
+        "length": "Jacket 19 in / Skirt 17 in"
+      },
+      "model_info": "Model is 5'8\" wearing Size S.",
+      "status": "published",
+      "rating": 4.9,
+      "reviews_count": 23,
+      "is_featured": true,
+      "is_new_arrival": true,
+      "is_best_seller": false,
+      "created_at": "2026-09-29T10:00:00Z",
+      "updated_at": "2026-10-10T12:00:00Z",
+      "variants": [
+        {
+          "id": "var_rhe_ivory_s",
+          "product_id": "prod_rhea_tweed",
+          "title": "Ivory Pearl / S",
+          "sku": "DS-RHE-IV-S",
+          "size": "S",
+          "color": "Ivory Pearl",
+          "colorHex": "#F7F5F0",
+          "price": 7499,
+          "sale_price": 5899,
+          "inventory_quantity": 3,
+          "in_stock": true
+        },
+        {
+          "id": "var_rhe_ivory_m",
+          "product_id": "prod_rhea_tweed",
+          "title": "Ivory Pearl / M",
+          "sku": "DS-RHE-IV-M",
+          "size": "M",
+          "color": "Ivory Pearl",
+          "colorHex": "#F7F5F0",
+          "price": 7499,
+          "sale_price": 5899,
+          "inventory_quantity": 4,
+          "in_stock": true
+        },
+        {
+          "id": "var_rhe_black_s",
+          "product_id": "prod_rhea_tweed",
+          "title": "Obsidian Black / S",
+          "sku": "DS-RHE-OB-S",
+          "size": "S",
+          "color": "Obsidian Black",
+          "colorHex": "#111111",
+          "price": 7499,
+          "sale_price": 5899,
+          "inventory_quantity": 3,
+          "in_stock": true
+        }
+      ]
+    },
+    {
+      "id": "prod_tara_anarkali",
+      "title": "Tara Embroidered Chanderi Festive Anarkali",
+      "handle": "tara-embroidered-chanderi-anarkali",
+      "subtitle": "Kalidar flared anarkali suit with gota patti embellishments",
+      "description": "A celebration of Indian royalty. Handcrafted in pure Chanderi silk with 32 kalis for maximum flare, detailed with geometric gota work and metallic churidar pants.",
+      "category": "Festive & Fusion",
+      "collection": "Royal Heritage Edition",
+      "thumbnail": "https://images.unsplash.com/photo-1583391733975-dd2834b17c91?auto=format&fit=crop&w=800&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1583391733975-dd2834b17c91?auto=format&fit=crop&w=1000&q=80"
+      ],
+      "tags": [
+        "Festive",
+        "Anarkali",
+        "Chanderi",
+        "Gota Patti"
+      ],
+      "material": "Pure Handloom Chanderi Silk with Santoon Lining",
+      "care_instructions": "Dry clean only.",
+      "size_guide": {
+        "chest": "34-42 in",
+        "waist": "28-36 in",
+        "hip": "Free",
+        "length": "52 in"
+      },
+      "model_info": "Model is 5'7\" wearing Size M.",
+      "status": "published",
+      "rating": 4.9,
+      "reviews_count": 27,
+      "is_featured": false,
+      "is_new_arrival": false,
+      "is_best_seller": true,
+      "created_at": "2026-09-13T10:00:00Z",
+      "updated_at": "2026-10-01T12:00:00Z",
+      "variants": [
+        {
+          "id": "var_tar_sapph_s",
+          "product_id": "prod_tara_anarkali",
+          "title": "Royal Sapphire / S",
+          "sku": "DS-TAR-RS-S",
+          "size": "S",
+          "color": "Royal Sapphire",
+          "colorHex": "#1A365D",
+          "price": 9499,
+          "sale_price": 7499,
+          "inventory_quantity": 3,
+          "in_stock": true
+        },
+        {
+          "id": "var_tar_sapph_m",
+          "product_id": "prod_tara_anarkali",
+          "title": "Royal Sapphire / M",
+          "sku": "DS-TAR-RS-M",
+          "size": "M",
+          "color": "Royal Sapphire",
+          "colorHex": "#1A365D",
+          "price": 9499,
+          "sale_price": 7499,
+          "inventory_quantity": 4,
+          "in_stock": true
+        },
+        {
+          "id": "var_tar_emerald_m",
+          "product_id": "prod_tara_anarkali",
+          "title": "Emerald Green / M",
+          "sku": "DS-TAR-EG-M",
+          "size": "M",
+          "color": "Emerald Green",
+          "colorHex": "#0F4336",
+          "price": 9499,
+          "sale_price": 7499,
+          "inventory_quantity": 3,
+          "in_stock": true
+        }
+      ]
+    },
+    {
+      "id": "prod_chloe_blouse",
+      "title": "Chloe Plunging V-Neck Silk Wrap Blouse",
+      "handle": "chloe-plunging-v-neck-silk-wrap-blouse",
+      "subtitle": "Tie-waist surplice blouse with flared French cuffs",
+      "description": "Sensual and polished. The Chloe silk wrap top drapes flatteringly around the natural waist with long adjustable sash ties, bishop sleeves, and a deep surplice V-neckline.",
+      "category": "Tops & Shirts",
+      "collection": "Midnight Runway Drop",
+      "thumbnail": "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=800&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=1000&q=80"
+      ],
+      "tags": [
+        "Tops",
+        "Wrap",
+        "Silk",
+        "Cocktail"
+      ],
+      "material": "Mulberry Silk Crepe",
+      "care_instructions": "Dry clean or gentle hand wash.",
+      "size_guide": {
+        "chest": "32-38 in",
+        "waist": "Adjustable Wrap",
+        "hip": "N/A",
+        "length": "21 in"
+      },
+      "model_info": "Model is 5'8\" wearing Size S.",
+      "status": "published",
+      "rating": 4.8,
+      "reviews_count": 15,
+      "is_featured": false,
+      "is_new_arrival": false,
+      "is_best_seller": false,
+      "created_at": "2026-09-23T10:00:00Z",
+      "updated_at": "2026-10-05T12:00:00Z",
+      "variants": [
+        {
+          "id": "var_chl_champ_s",
+          "product_id": "prod_chloe_blouse",
+          "title": "Champagne Gold / S",
+          "sku": "DS-CHL-CG-S",
+          "size": "S",
+          "color": "Champagne Gold",
+          "colorHex": "#D4AF37",
+          "price": 3299,
+          "sale_price": 2499,
+          "inventory_quantity": 5,
+          "in_stock": true
+        },
+        {
+          "id": "var_chl_champ_m",
+          "product_id": "prod_chloe_blouse",
+          "title": "Champagne Gold / M",
+          "sku": "DS-CHL-CG-M",
+          "size": "M",
+          "color": "Champagne Gold",
+          "colorHex": "#D4AF37",
+          "price": 3299,
+          "sale_price": 2499,
+          "inventory_quantity": 4,
+          "in_stock": true
+        },
+        {
+          "id": "var_chl_emerald_s",
+          "product_id": "prod_chloe_blouse",
+          "title": "Emerald Green / S",
+          "sku": "DS-CHL-EG-S",
+          "size": "S",
+          "color": "Emerald Green",
+          "colorHex": "#0F4336",
+          "price": 3299,
+          "sale_price": 2499,
+          "inventory_quantity": 3,
+          "in_stock": true
+        }
+      ]
+    },
+    {
+      "id": "prod_vesper_skirt",
+      "title": "Vesper Side-Slit High-Rise Column Skirt",
+      "handle": "vesper-side-slit-high-rise-column-skirt",
+      "subtitle": "Floor-sweeping satin maxi skirt with daring thigh slit",
+      "description": "Sculptural minimalism. Cut to sit high on the waist, falling in a clean column silhouette with a side zip closure and a walking slit positioned for dramatic movement.",
+      "category": "Trousers & Skirts",
+      "collection": "Midnight Runway Drop",
+      "thumbnail": "https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?auto=format&fit=crop&w=800&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?auto=format&fit=crop&w=1000&q=80"
+      ],
+      "tags": [
+        "Skirts",
+        "Maxi",
+        "Satin",
+        "Evening"
+      ],
+      "material": "Heavy Weight Dutchess Satin",
+      "care_instructions": "Dry clean.",
+      "size_guide": {
+        "chest": "N/A",
+        "waist": "25-30 in",
+        "hip": "35-40 in",
+        "length": "41 in"
+      },
+      "model_info": "Model is 5'9\" wearing Size S.",
+      "status": "published",
+      "rating": 4.7,
+      "reviews_count": 13,
+      "is_featured": false,
+      "is_new_arrival": false,
+      "is_best_seller": false,
+      "created_at": "2026-09-18T10:00:00Z",
+      "updated_at": "2026-10-02T12:00:00Z",
+      "variants": [
+        {
+          "id": "var_ves_black_xs",
+          "product_id": "prod_vesper_skirt",
+          "title": "Obsidian Black / XS",
+          "sku": "DS-VES-OB-XS",
+          "size": "XS",
+          "color": "Obsidian Black",
+          "colorHex": "#111111",
+          "price": 3299,
+          "sale_price": 2499,
+          "inventory_quantity": 4,
+          "in_stock": true
+        },
+        {
+          "id": "var_ves_black_s",
+          "product_id": "prod_vesper_skirt",
+          "title": "Obsidian Black / S",
+          "sku": "DS-VES-OB-S",
+          "size": "S",
+          "color": "Obsidian Black",
+          "colorHex": "#111111",
+          "price": 3299,
+          "sale_price": 2499,
+          "inventory_quantity": 6,
+          "in_stock": true
+        },
+        {
+          "id": "var_ves_champ_s",
+          "product_id": "prod_vesper_skirt",
+          "title": "Champagne Gold / S",
+          "sku": "DS-VES-CG-S",
+          "size": "S",
+          "color": "Champagne Gold",
+          "colorHex": "#D4AF37",
+          "price": 3299,
+          "sale_price": 2499,
+          "inventory_quantity": 3,
+          "in_stock": true
+        }
+      ]
+    },
+    {
+      "id": "prod_scarlett_velvet",
+      "title": "Scarlett Backless Cowl Velvet Slip Dress",
+      "handle": "scarlett-backless-cowl-velvet-slip-dress",
+      "subtitle": "Plush wine velvet slip with low scooped back and spaghetti straps",
+      "description": "Sensual 90s nostalgia elevated for gala evenings. The Scarlett dress is cut on the bias from plush, reflective stretch velvet that catches ambient candlelight.",
+      "category": "Dresses",
+      "collection": "Midnight Runway Drop",
+      "thumbnail": "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=800&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1000&q=80"
+      ],
+      "tags": [
+        "Velvet",
+        "Slip Dress",
+        "Cocktail",
+        "Backless"
+      ],
+      "material": "92% Micro Velvet, 8% Spandex",
+      "care_instructions": "Dry clean only.",
+      "size_guide": {
+        "chest": "32-36 in",
+        "waist": "25-29 in",
+        "hip": "35-39 in",
+        "length": "52 in"
+      },
+      "model_info": "Model is 5'8\" wearing Size S.",
+      "status": "published",
+      "rating": 4.9,
+      "reviews_count": 24,
+      "is_featured": true,
+      "is_new_arrival": true,
+      "is_best_seller": false,
+      "created_at": "2026-09-30T10:00:00Z",
+      "updated_at": "2026-10-11T12:00:00Z",
+      "variants": [
+        {
+          "id": "var_sca_wine_xs",
+          "product_id": "prod_scarlett_velvet",
+          "title": "Deep Wine / XS",
+          "sku": "DS-SCA-DW-XS",
+          "size": "XS",
+          "color": "Deep Wine",
+          "colorHex": "#5B1425",
+          "price": 4799,
+          "sale_price": 3699,
+          "inventory_quantity": 3,
+          "in_stock": true
+        },
+        {
+          "id": "var_sca_wine_s",
+          "product_id": "prod_scarlett_velvet",
+          "title": "Deep Wine / S",
+          "sku": "DS-SCA-DW-S",
+          "size": "S",
+          "color": "Deep Wine",
+          "colorHex": "#5B1425",
+          "price": 4799,
+          "sale_price": 3699,
+          "inventory_quantity": 5,
+          "in_stock": true
+        },
+        {
+          "id": "var_sca_black_s",
+          "product_id": "prod_scarlett_velvet",
+          "title": "Obsidian Black / S",
+          "sku": "DS-SCA-OB-S",
+          "size": "S",
+          "color": "Obsidian Black",
+          "colorHex": "#111111",
+          "price": 4799,
+          "sale_price": 3699,
+          "inventory_quantity": 4,
+          "in_stock": true
+        }
+      ]
+    },
+    {
+      "id": "prod_maya_kimono",
+      "title": "Maya Bohemian Printed Kimono Co-ord Set",
+      "handle": "maya-bohemian-printed-kimono-coord-set",
+      "subtitle": "Draped belted duster robe with matching high-rise lounge pants",
+      "description": "Vacation-luxe lounging at its finest. The Maya set features a fluid longline kimono with wide sleeves and a self-tie sash, paired with relaxed drawstring palazzo pants.",
+      "category": "Co-ord Sets",
+      "collection": "Sun-Drenched Resort & Street",
+      "thumbnail": "https://images.unsplash.com/photo-1502716119720-b23a93e5fe1b?auto=format&fit=crop&w=800&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1502716119720-b23a93e5fe1b?auto=format&fit=crop&w=1000&q=80"
+      ],
+      "tags": [
+        "Resort",
+        "Co-ord",
+        "Kimono",
+        "Boho"
+      ],
+      "material": "100% Modal Satin",
+      "care_instructions": "Cold delicate hand wash.",
+      "size_guide": {
+        "chest": "Free",
+        "waist": "26-34 in (Drawstring)",
+        "hip": "Free",
+        "length": "Robe 48 in / Pant 40 in"
+      },
+      "model_info": "Model is 5'9\" wearing Size S.",
+      "status": "published",
+      "rating": 4.8,
+      "reviews_count": 16,
+      "is_featured": false,
+      "is_new_arrival": true,
+      "is_best_seller": false,
+      "created_at": "2026-09-26T10:00:00Z",
+      "updated_at": "2026-10-06T12:00:00Z",
+      "variants": [
+        {
+          "id": "var_may_rust_s",
+          "product_id": "prod_maya_kimono",
+          "title": "Terracotta Rust / S",
+          "sku": "DS-MAY-TR-S",
+          "size": "S",
+          "color": "Terracotta Rust",
+          "colorHex": "#B85D43",
+          "price": 4999,
+          "sale_price": 3799,
+          "inventory_quantity": 4,
+          "in_stock": true
+        },
+        {
+          "id": "var_may_rust_m",
+          "product_id": "prod_maya_kimono",
+          "title": "Terracotta Rust / M",
+          "sku": "DS-MAY-TR-M",
+          "size": "M",
+          "color": "Terracotta Rust",
+          "colorHex": "#B85D43",
+          "price": 4999,
+          "sale_price": 3799,
+          "inventory_quantity": 5,
+          "in_stock": true
+        },
+        {
+          "id": "var_may_emerald_m",
+          "product_id": "prod_maya_kimono",
+          "title": "Emerald Green / M",
+          "sku": "DS-MAY-EG-M",
+          "size": "M",
+          "color": "Emerald Green",
+          "colorHex": "#0F4336",
+          "price": 4999,
+          "sale_price": 3799,
+          "inventory_quantity": 3,
           "in_stock": true
         }
       ]
@@ -777,7 +1832,7 @@
       "handle": "dresses",
       "description": "Slip dresses, bodycon, corset silhouettes, and cocktail evening gowns.",
       "image": "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=800&q=80",
-      "item_count": 4
+      "item_count": 6
     },
     {
       "id": "cat_coords",
@@ -785,7 +1840,7 @@
       "handle": "coords",
       "description": "Effortlessly matched two-piece suits, resort sets, and street-luxe pairs.",
       "image": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=80",
-      "item_count": 3
+      "item_count": 5
     },
     {
       "id": "cat_festive",
@@ -793,7 +1848,7 @@
       "handle": "festive-fusion",
       "description": "Opulent velvet, Banarasi brocades, and modern ethnic statement wear.",
       "image": "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=800&q=80",
-      "item_count": 2
+      "item_count": 5
     },
     {
       "id": "cat_tops",
@@ -801,7 +1856,7 @@
       "handle": "tops-shirts",
       "description": "Glass organza shirts, corset crop tops, and artisanal statement blouses.",
       "image": "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=800&q=80",
-      "item_count": 2
+      "item_count": 3
     },
     {
       "id": "cat_bottoms",
@@ -809,7 +1864,7 @@
       "handle": "bottoms",
       "description": "High-waist double-pleated pants, satin cargos, and fluid slit skirts.",
       "image": "https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=800&q=80",
-      "item_count": 2
+      "item_count": 3
     }
   ],
   "collections": [
@@ -912,10 +1967,158 @@
       "subtotal": 0,
       "total": 0,
       "created_at": "2026-10-13T05:13:51.823Z",
-      "updated_at": "2026-10-13T05:18:14.114Z"
+      "updated_at": "2026-10-13T06:30:48.873Z"
+    },
+    {
+      "id": "cart_839d86d0bbc64ba5",
+      "customer_id": null,
+      "email": null,
+      "items": [],
+      "coupon_code": null,
+      "discount_amount": 0,
+      "shipping_method": {
+        "id": "ship_standard",
+        "name": "Standard Pan-India Shipping",
+        "price": 0,
+        "estimated_days": "3-5 business days"
+      },
+      "shipping_total": 0,
+      "subtotal": 0,
+      "total": 0,
+      "created_at": "2026-10-13T10:19:42.140Z",
+      "updated_at": "2026-10-13T10:19:42.140Z"
+    },
+    {
+      "id": "cart_4d217351acd24a20",
+      "customer_id": null,
+      "email": null,
+      "items": [
+        {
+          "id": "item_5e9ee58cf59f",
+          "product_id": "prod_zuri_corset",
+          "variant_id": "var_zuri_blush_xs",
+          "title": "Zuri Structured Corset Midi Dress",
+          "variant_title": "Blush Rose / XS",
+          "thumbnail": "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?auto=format&fit=crop&w=800&q=80",
+          "price": 3199,
+          "regular_price": 4499,
+          "quantity": 1,
+          "size": "XS",
+          "color": "Blush Rose",
+          "colorHex": "#DDA7A5"
+        },
+        {
+          "id": "item_dbacb4ab5b14",
+          "product_id": "prod_kyra_coord",
+          "variant_id": "var_kyra_beige_xs",
+          "title": "Kyra Tailored Linen-Blend Co-ord Set",
+          "variant_title": "Sandstone Beige / XS",
+          "thumbnail": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=80",
+          "price": 2899,
+          "regular_price": 3999,
+          "quantity": 1,
+          "size": "XS",
+          "color": "Sandstone Beige",
+          "colorHex": "#D9C5B2"
+        },
+        {
+          "id": "item_692f0d98a986",
+          "product_id": "prod_aria_trouser",
+          "variant_id": "var_aria_taupe_m",
+          "title": "Aria High-Waist Wide-Leg Pleated Trousers",
+          "variant_title": "Camel Taupe / M",
+          "thumbnail": "https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=800&q=80",
+          "price": 1999,
+          "regular_price": 2799,
+          "quantity": 1,
+          "size": "M",
+          "color": "Camel Taupe",
+          "colorHex": "#8C705F"
+        }
+      ],
+      "coupon_code": null,
+      "discount_amount": 0,
+      "shipping_method": {
+        "id": "ship_standard",
+        "name": "Standard Pan-India Shipping",
+        "price": 0,
+        "estimated_days": "3-5 business days"
+      },
+      "shipping_total": 0,
+      "subtotal": 8097,
+      "total": 8097,
+      "created_at": "2026-10-13T10:19:42.154Z",
+      "updated_at": "2026-10-13T10:55:17.127Z"
     }
   ],
   "orders": [
+    {
+      "id": "order_d4be54f82ccc4188",
+      "display_id": "DS-73301",
+      "customer_id": null,
+      "email": "saipabi123@gmail.com",
+      "phone": "6381565927",
+      "shipping_address": {
+        "first_name": "suriya",
+        "last_name": "rajarajesh",
+        "email": "saipabi123@gmail.com",
+        "phone": "6381565927",
+        "address_line1": "No.4/20, 6th street,",
+        "city": "chennai",
+        "state": "Tamil Nadu",
+        "postal_code": "600083",
+        "country": "India"
+      },
+      "items": [
+        {
+          "id": "item_251c05ec236e",
+          "product_id": "prod_jahan_brocade",
+          "variant_id": "var_jahan_purple_s",
+          "title": "Jahan Banarasi Brocade Crop Jacket & Skirt Set",
+          "variant_title": "Royal Purple & Gold / S",
+          "thumbnail": "https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=800&q=80",
+          "price": 6299,
+          "regular_price": 8999,
+          "quantity": 1,
+          "size": "S",
+          "color": "Royal Purple",
+          "colorHex": "#4B2354"
+        }
+      ],
+      "shipping_method": {
+        "id": "ship_standard",
+        "name": "Standard Pan-India Shipping",
+        "price": 0,
+        "estimated_days": "3-5 business days"
+      },
+      "payment_method": "netbanking",
+      "payment_status": "captured",
+      "fulfillment_status": "processing",
+      "courier_name": "Bluedart Express / Delhivery",
+      "tracking_number": "DS352737518IN",
+      "tracking_history": [
+        {
+          "status": "Order Placed",
+          "description": "Your order has been verified and registered at DS Wardrobe studio.",
+          "location": "Singarayakonda Studio Hub",
+          "timestamp": "2026-10-13T06:34:07.157Z"
+        },
+        {
+          "status": "Processing",
+          "description": "Garments undergoing boutique quality inspection and custom tissue-packaging.",
+          "location": "Singarayakonda Fulfilment Center",
+          "timestamp": "2026-10-13T08:34:07.157Z"
+        }
+      ],
+      "subtotal": 6299,
+      "discount_total": 0,
+      "shipping_total": 0,
+      "tax_total": 315,
+      "total": 6299,
+      "notes": "",
+      "created_at": "2026-10-13T06:34:07.157Z",
+      "updated_at": "2026-10-13T06:34:07.157Z"
+    },
     {
       "id": "order_9dc94b148eb44784",
       "display_id": "DS-38589",
