@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
-import { useRouter } from 'next/navigation';
+import { useRouter, useSearchParams, usePathname } from 'next/navigation';
 import {
   ShoppingBag,
   Heart,
@@ -22,6 +22,8 @@ import { Product } from '../types/commerce';
 
 export const Navbar: React.FC = () => {
   const router = useRouter();
+  const searchParams = useSearchParams();
+  const pathname = usePathname();
   const { openCart, itemCount, cart } = useCart();
   const { customer, isAuthenticated, logout, wishlist } = useAuth();
 
@@ -33,6 +35,35 @@ export const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
 
   const searchRef = useRef<HTMLDivElement>(null);
+
+  // Synchronize searchQuery with URL query parameter
+  useEffect(() => {
+    const q = searchParams.get('q');
+    if (q) {
+      setSearchQuery(q);
+    } else if (pathname === '/shop' || pathname === '/') {
+      setSearchQuery('');
+    }
+  }, [searchParams, pathname]);
+
+  const handleClearSearch = () => {
+    setSearchQuery('');
+    setShowSearchDropdown(false);
+    if (pathname === '/shop') {
+      const cat = searchParams.get('category');
+      if (cat) {
+        router.push(`/shop?category=${encodeURIComponent(cat)}`);
+      } else {
+        router.push('/shop');
+      }
+    }
+  };
+
+  const handleNavClick = () => {
+    setSearchQuery('');
+    setShowSearchDropdown(false);
+    setMobileMenuOpen(false);
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -151,30 +182,35 @@ export const Navbar: React.FC = () => {
             <nav className="hidden lg:flex items-center space-x-7 text-xs font-semibold tracking-widest uppercase">
               <Link
                 href="/"
+                onClick={handleNavClick}
                 className="text-[#E0E0E6] hover:text-[#D4AF37] transition-colors py-2"
               >
                 Home
               </Link>
               <Link
                 href="/shop"
+                onClick={handleNavClick}
                 className="text-[#E0E0E6] hover:text-[#D4AF37] transition-colors py-2"
               >
                 Shop All
               </Link>
               <Link
                 href="/shop?category=Dresses"
+                onClick={handleNavClick}
                 className="text-[#E0E0E6] hover:text-[#D4AF37] transition-colors py-2"
               >
                 Dresses
               </Link>
               <Link
                 href="/shop?category=Co-ord+Sets"
+                onClick={handleNavClick}
                 className="text-[#E0E0E6] hover:text-[#D4AF37] transition-colors py-2"
               >
                 Co-ords
               </Link>
               <Link
                 href="/shop?category=Festive+%26+Fusion"
+                onClick={handleNavClick}
                 className="text-[#E0E0E6] hover:text-[#D4AF37] transition-colors py-2 flex items-center space-x-1"
               >
                 <span>Festive</span>
@@ -182,12 +218,14 @@ export const Navbar: React.FC = () => {
               </Link>
               <Link
                 href="/track-order"
+                onClick={handleNavClick}
                 className="text-[#E0E0E6] hover:text-[#D4AF37] transition-colors py-2"
               >
                 Track
               </Link>
               <Link
                 href="/admin"
+                onClick={handleNavClick}
                 className="text-[#D4AF37] hover:text-[#F3E5AB] transition-colors py-2 px-2.5 rounded border border-[#D4AF37]/30 bg-[#D4AF37]/5 text-[10px]"
               >
                 Admin
@@ -208,9 +246,19 @@ export const Navbar: React.FC = () => {
                       onFocus={() => {
                         if (searchResults.length > 0) setShowSearchDropdown(true);
                       }}
-                      className="w-full bg-[#16161A] text-xs text-[#EAEAEF] pl-9 pr-3 py-2 rounded-full border border-[#2B2B32] focus:border-[#D4AF37] focus:outline-none focus:ring-1 focus:ring-[#D4AF37] transition-all placeholder:text-[#6E6E78]"
+                      className="w-full bg-[#16161A] text-xs text-[#EAEAEF] pl-9 pr-8 py-2 rounded-full border border-[#2B2B32] focus:border-[#D4AF37] focus:outline-none focus:ring-1 focus:ring-[#D4AF37] transition-all placeholder:text-[#6E6E78]"
                     />
                     <Search className="w-4 h-4 text-[#8A8A94] absolute left-3 top-2.5 pointer-events-none" />
+                    {searchQuery && (
+                      <button
+                        type="button"
+                        onClick={handleClearSearch}
+                        className="absolute right-2.5 top-2.5 text-[#8A8A94] hover:text-white transition-colors"
+                        aria-label="Clear search"
+                      >
+                        <X className="w-3.5 h-3.5" />
+                      </button>
+                    )}
                   </div>
                 </form>
 
@@ -302,7 +350,7 @@ export const Navbar: React.FC = () => {
         </div>
 
         {/* Mobile Search Bar Row */}
-        <div className="md:hidden px-4 pb-3">
+        <div className="md:hidden px-4 pb-3 relative">
           <form onSubmit={handleSearchSubmit}>
             <div className="relative">
               <input
@@ -310,11 +358,68 @@ export const Navbar: React.FC = () => {
                 placeholder="Search DS Wardrobe drops..."
                 value={searchQuery}
                 onChange={e => setSearchQuery(e.target.value)}
-                className="w-full bg-[#16161A] text-xs text-[#EAEAEF] pl-9 pr-3 py-2 rounded-full border border-[#2B2B32] focus:border-[#D4AF37] focus:outline-none placeholder:text-[#6E6E78]"
+                onFocus={() => {
+                  if (searchResults.length > 0) setShowSearchDropdown(true);
+                }}
+                className="w-full bg-[#16161A] text-xs text-[#EAEAEF] pl-9 pr-8 py-2 rounded-full border border-[#2B2B32] focus:border-[#D4AF37] focus:outline-none placeholder:text-[#6E6E78]"
               />
               <Search className="w-4 h-4 text-[#8A8A94] absolute left-3 top-2.5 pointer-events-none" />
+              {searchQuery && (
+                <button
+                  type="button"
+                  onClick={handleClearSearch}
+                  className="absolute right-2.5 top-2.5 text-[#8A8A94] hover:text-white transition-colors"
+                  aria-label="Clear search"
+                >
+                  <X className="w-3.5 h-3.5" />
+                </button>
+              )}
             </div>
           </form>
+
+          {/* Instant Search Dropdown for Mobile */}
+          {showSearchDropdown && (
+            <div className="absolute top-full left-4 right-4 mt-1 bg-[#141418] border border-[#2B2B36] rounded-xl shadow-2xl p-3 z-50 animate-in fade-in slide-in-from-top-2">
+              <div className="text-[10px] tracking-wider text-[#A0A0AA] uppercase font-semibold pb-2 border-b border-[#282830]">
+                {searchLoading ? 'Searching...' : `Matching Items (${searchResults.length})`}
+              </div>
+
+              {searchResults.length === 0 && !searchLoading ? (
+                <div className="py-4 text-xs text-center text-[#888894]">
+                  No matching drops found.
+                </div>
+              ) : (
+                <div className="divide-y divide-[#24242C] max-h-60 overflow-y-auto">
+                  {searchResults.map(prod => (
+                    <Link
+                      key={prod.id}
+                      href={`/product/${prod.handle}`}
+                      onClick={() => {
+                        setShowSearchDropdown(false);
+                        setMobileMenuOpen(false);
+                      }}
+                      className="flex items-center space-x-3 py-2 px-1 hover:bg-[#202026] rounded-lg transition-colors group"
+                    >
+                      <img
+                        src={prod.thumbnail}
+                        alt={prod.title}
+                        className="w-10 h-12 object-cover rounded shadow"
+                      />
+                      <div className="flex-1 min-w-0">
+                        <h4 className="text-xs font-medium text-white truncate group-hover:text-[#D4AF37]">
+                          {prod.title}
+                        </h4>
+                        <p className="text-[10px] text-[#A0A0AA] truncate">{prod.category}</p>
+                        <p className="text-xs font-semibold text-[#D4AF37] mt-0.5">
+                          ₹{prod.variants[0]?.sale_price || prod.variants[0]?.price}
+                        </p>
+                      </div>
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
+          )}
         </div>
       </header>
 
@@ -347,7 +452,7 @@ export const Navbar: React.FC = () => {
             <div className="py-6 flex flex-col space-y-4 text-sm font-semibold tracking-wider uppercase">
               <Link
                 href="/"
-                onClick={() => setMobileMenuOpen(false)}
+                onClick={handleNavClick}
                 className="flex items-center justify-between text-[#E5E5EB] hover:text-[#D4AF37] py-2 border-b border-[#1E1E24]"
               >
                 <span>Home</span>
@@ -355,7 +460,7 @@ export const Navbar: React.FC = () => {
               </Link>
               <Link
                 href="/shop"
-                onClick={() => setMobileMenuOpen(false)}
+                onClick={handleNavClick}
                 className="flex items-center justify-between text-[#E5E5EB] hover:text-[#D4AF37] py-2 border-b border-[#1E1E24]"
               >
                 <span>All Catalog</span>
@@ -363,7 +468,7 @@ export const Navbar: React.FC = () => {
               </Link>
               <Link
                 href="/shop?category=Dresses"
-                onClick={() => setMobileMenuOpen(false)}
+                onClick={handleNavClick}
                 className="flex items-center justify-between text-[#E5E5EB] hover:text-[#D4AF37] py-2 border-b border-[#1E1E24]"
               >
                 <span>Dresses & Gowns</span>
@@ -371,7 +476,7 @@ export const Navbar: React.FC = () => {
               </Link>
               <Link
                 href="/shop?category=Co-ord+Sets"
-                onClick={() => setMobileMenuOpen(false)}
+                onClick={handleNavClick}
                 className="flex items-center justify-between text-[#E5E5EB] hover:text-[#D4AF37] py-2 border-b border-[#1E1E24]"
               >
                 <span>Co-ord Sets</span>
@@ -379,7 +484,7 @@ export const Navbar: React.FC = () => {
               </Link>
               <Link
                 href="/shop?category=Festive+%26+Fusion"
-                onClick={() => setMobileMenuOpen(false)}
+                onClick={handleNavClick}
                 className="flex items-center justify-between text-[#E5E5EB] hover:text-[#D4AF37] py-2 border-b border-[#1E1E24]"
               >
                 <span className="flex items-center space-x-1.5">
@@ -390,7 +495,7 @@ export const Navbar: React.FC = () => {
               </Link>
               <Link
                 href="/track-order"
-                onClick={() => setMobileMenuOpen(false)}
+                onClick={handleNavClick}
                 className="flex items-center justify-between text-[#E5E5EB] hover:text-[#D4AF37] py-2 border-b border-[#1E1E24]"
               >
                 <span>Track Order</span>
@@ -398,7 +503,7 @@ export const Navbar: React.FC = () => {
               </Link>
               <Link
                 href="/wishlist"
-                onClick={() => setMobileMenuOpen(false)}
+                onClick={handleNavClick}
                 className="flex items-center justify-between text-[#E5E5EB] hover:text-[#D4AF37] py-2 border-b border-[#1E1E24]"
               >
                 <span>Wishlist ({wishlist.length})</span>
@@ -406,7 +511,7 @@ export const Navbar: React.FC = () => {
               </Link>
               <Link
                 href="/account"
-                onClick={() => setMobileMenuOpen(false)}
+                onClick={handleNavClick}
                 className="flex items-center justify-between text-[#E5E5EB] hover:text-[#D4AF37] py-2 border-b border-[#1E1E24]"
               >
                 <span>My Account</span>
@@ -414,7 +519,7 @@ export const Navbar: React.FC = () => {
               </Link>
               <Link
                 href="/admin"
-                onClick={() => setMobileMenuOpen(false)}
+                onClick={handleNavClick}
                 className="flex items-center justify-between text-[#D4AF37] py-2 border-b border-[#1E1E24]"
               >
                 <span>Admin Portal</span>

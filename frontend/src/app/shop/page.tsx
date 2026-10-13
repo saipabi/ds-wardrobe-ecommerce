@@ -32,6 +32,7 @@ function ShopContent() {
 
   // Filter States
   const [selectedCategory, setSelectedCategory] = useState<string>(initialCat);
+  const [selectedCollection, setSelectedCollection] = useState<string>(initialCollection);
   const [selectedSize, setSelectedSize] = useState<string>('');
   const [selectedColor, setSelectedColor] = useState<string>('');
   const [maxPrice, setMaxPrice] = useState<number>(10000);
@@ -54,6 +55,27 @@ function ShopContent() {
     { name: 'Ivory Pearl', hex: '#F7F5F0' }
   ];
 
+  // Synchronize state whenever URL query params change (e.g. Navbar links, back/forward, search submissions)
+  useEffect(() => {
+    const cat = searchParams.get('category') || 'all';
+    const q = searchParams.get('q') || '';
+    const col = searchParams.get('collection') || 'all';
+    const sort = searchParams.get('sort') || 'featured';
+
+    setSelectedCategory(cat);
+    setSelectedCollection(col);
+    setSearchVal(q);
+    setSortBy(sort);
+
+    // If navigated to /shop without category/q/collection, reset active facet filters:
+    if (!searchParams.get('category') && !searchParams.get('q') && !searchParams.get('collection')) {
+      setSelectedSize('');
+      setSelectedColor('');
+      setMaxPrice(10000);
+      setInStockOnly(false);
+    }
+  }, [searchParams]);
+
   useEffect(() => {
     async function fetchCatalog() {
       try {
@@ -62,7 +84,7 @@ function ShopContent() {
           api.getCategories(),
           api.getProducts({
             category: selectedCategory === 'all' ? undefined : selectedCategory,
-            collection: initialCollection === 'all' ? undefined : initialCollection,
+            collection: selectedCollection === 'all' ? undefined : selectedCollection,
             q: searchVal,
             size: selectedSize || undefined,
             color: selectedColor || undefined,
@@ -82,10 +104,20 @@ function ShopContent() {
     }
 
     fetchCatalog();
-  }, [selectedCategory, initialCollection, searchVal, selectedSize, selectedColor, maxPrice, inStockOnly, sortBy]);
+  }, [selectedCategory, selectedCollection, searchVal, selectedSize, selectedColor, maxPrice, inStockOnly, sortBy]);
+
+  const handleCategorySelect = (categoryName: string) => {
+    setSelectedCategory(categoryName);
+    if (categoryName === 'all') {
+      router.push('/shop');
+    } else {
+      router.push(`/shop?category=${encodeURIComponent(categoryName)}`);
+    }
+  };
 
   const handleResetFilters = () => {
     setSelectedCategory('all');
+    setSelectedCollection('all');
     setSelectedSize('');
     setSelectedColor('');
     setMaxPrice(10000);
@@ -171,7 +203,7 @@ function ShopContent() {
             <h3 className="text-xs font-bold uppercase tracking-wider text-white">Categories</h3>
             <div className="space-y-1 text-xs">
               <button
-                onClick={() => setSelectedCategory('all')}
+                onClick={() => handleCategorySelect('all')}
                 className={`w-full text-left py-1.5 px-2.5 rounded-lg transition-colors flex items-center justify-between ${
                   selectedCategory === 'all'
                     ? 'bg-[#D4AF37]/15 text-[#D4AF37] font-semibold'
@@ -184,7 +216,7 @@ function ShopContent() {
               {categories.map(cat => (
                 <button
                   key={cat.id}
-                  onClick={() => setSelectedCategory(cat.name)}
+                  onClick={() => handleCategorySelect(cat.name)}
                   className={`w-full text-left py-1.5 px-2.5 rounded-lg transition-colors flex items-center justify-between ${
                     selectedCategory === cat.name
                       ? 'bg-[#D4AF37]/15 text-[#D4AF37] font-semibold'
@@ -302,6 +334,83 @@ function ShopContent() {
 
         {/* Product Grid Area */}
         <main className="flex-1">
+          {/* Active Filter Badges Bar (Both Mobile and Desktop) */}
+          {hasActiveFilters && (
+            <div className="flex flex-wrap items-center gap-2 mb-6 p-3 sm:p-4 rounded-2xl bg-[#141419] border border-[#262632]">
+              <span className="text-[11px] font-semibold text-[#F3E5AB] uppercase tracking-wider mr-1">
+                Active:
+              </span>
+              {selectedCategory !== 'all' && (
+                <button
+                  onClick={() => handleCategorySelect('all')}
+                  className="inline-flex items-center space-x-1.5 px-3 py-1 rounded-full text-xs bg-[#D4AF37]/15 text-[#D4AF37] border border-[#D4AF37]/40 hover:bg-[#D4AF37]/25 transition-colors"
+                >
+                  <span>Category: {selectedCategory}</span>
+                  <X className="w-3.5 h-3.5" />
+                </button>
+              )}
+              {searchVal && (
+                <button
+                  onClick={() => {
+                    setSearchVal('');
+                    if (selectedCategory !== 'all') {
+                      router.push(`/shop?category=${encodeURIComponent(selectedCategory)}`);
+                    } else {
+                      router.push('/shop');
+                    }
+                  }}
+                  className="inline-flex items-center space-x-1.5 px-3 py-1 rounded-full text-xs bg-[#D4AF37]/15 text-[#D4AF37] border border-[#D4AF37]/40 hover:bg-[#D4AF37]/25 transition-colors"
+                >
+                  <span>Search: "{searchVal}"</span>
+                  <X className="w-3.5 h-3.5" />
+                </button>
+              )}
+              {selectedSize && (
+                <button
+                  onClick={() => setSelectedSize('')}
+                  className="inline-flex items-center space-x-1.5 px-3 py-1 rounded-full text-xs bg-[#22222A] text-white border border-[#3A3A46] hover:bg-[#2C2C36] transition-colors"
+                >
+                  <span>Size: {selectedSize}</span>
+                  <X className="w-3.5 h-3.5" />
+                </button>
+              )}
+              {selectedColor && (
+                <button
+                  onClick={() => setSelectedColor('')}
+                  className="inline-flex items-center space-x-1.5 px-3 py-1 rounded-full text-xs bg-[#22222A] text-white border border-[#3A3A46] hover:bg-[#2C2C36] transition-colors"
+                >
+                  <span>Color: {selectedColor}</span>
+                  <X className="w-3.5 h-3.5" />
+                </button>
+              )}
+              {maxPrice < 10000 && (
+                <button
+                  onClick={() => setMaxPrice(10000)}
+                  className="inline-flex items-center space-x-1.5 px-3 py-1 rounded-full text-xs bg-[#22222A] text-white border border-[#3A3A46] hover:bg-[#2C2C36] transition-colors"
+                >
+                  <span>Max: ₹{maxPrice.toLocaleString()}</span>
+                  <X className="w-3.5 h-3.5" />
+                </button>
+              )}
+              {inStockOnly && (
+                <button
+                  onClick={() => setInStockOnly(false)}
+                  className="inline-flex items-center space-x-1.5 px-3 py-1 rounded-full text-xs bg-[#22222A] text-white border border-[#3A3A46] hover:bg-[#2C2C36] transition-colors"
+                >
+                  <span>In-Stock</span>
+                  <X className="w-3.5 h-3.5" />
+                </button>
+              )}
+              <button
+                onClick={handleResetFilters}
+                className="text-xs text-[#E06D53] hover:underline ml-auto flex items-center space-x-1 py-1"
+              >
+                <RotateCcw className="w-3 h-3" />
+                <span>Reset All</span>
+              </button>
+            </div>
+          )}
+
           {loading ? (
             <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
               {[1, 2, 3, 4, 5, 6].map(n => (
@@ -359,7 +468,10 @@ function ShopContent() {
                 <h4 className="text-xs font-bold uppercase tracking-wider text-[#A0A0B0] mb-2">Category</h4>
                 <div className="space-y-1 text-xs">
                   <button
-                    onClick={() => setSelectedCategory('all')}
+                    onClick={() => {
+                      handleCategorySelect('all');
+                      setMobileFilterOpen(false);
+                    }}
                     className={`w-full text-left py-1.5 px-2 rounded ${
                       selectedCategory === 'all' ? 'text-[#D4AF37] font-bold' : 'text-[#8E8E9E]'
                     }`}
@@ -369,7 +481,10 @@ function ShopContent() {
                   {categories.map(c => (
                     <button
                       key={c.id}
-                      onClick={() => setSelectedCategory(c.name)}
+                      onClick={() => {
+                        handleCategorySelect(c.name);
+                        setMobileFilterOpen(false);
+                      }}
                       className={`w-full text-left py-1.5 px-2 rounded ${
                         selectedCategory === c.name ? 'text-[#D4AF37] font-bold' : 'text-[#8E8E9E]'
                       }`}
