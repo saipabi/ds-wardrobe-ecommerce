@@ -12,7 +12,9 @@ import {
   MapPin,
   ExternalLink,
   Sparkles,
-  AlertCircle
+  AlertCircle,
+  Loader2,
+  RefreshCw
 } from 'lucide-react';
 import { api } from '../../lib/api';
 import { Order } from '../../types/commerce';
@@ -24,6 +26,7 @@ function TrackOrderContent() {
   const [orderQuery, setOrderQuery] = useState(initialId);
   const [order, setOrder] = useState<Order | null>(null);
   const [loading, setLoading] = useState(false);
+  const [justRefreshed, setJustRefreshed] = useState(false);
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
 
   const fetchTracking = async (displayId: string) => {
@@ -34,6 +37,8 @@ function TrackOrderContent() {
       setErrorMsg(null);
       const res = await api.trackOrder(displayId.trim());
       setOrder(res.order);
+      setJustRefreshed(true);
+      setTimeout(() => setJustRefreshed(false), 3500);
     } catch (err: any) {
       setOrder(null);
       setErrorMsg(
@@ -110,11 +115,30 @@ function TrackOrderContent() {
           <button
             type="submit"
             disabled={loading}
-            className="bg-[#D4AF37] hover:bg-[#E5C058] text-black font-extrabold text-xs uppercase tracking-widest px-7 py-3.5 rounded-2xl transition-all disabled:opacity-50"
+            className="bg-[#D4AF37] hover:bg-[#E5C058] text-black font-extrabold text-xs uppercase tracking-widest px-7 py-3.5 rounded-2xl transition-all disabled:opacity-50 flex items-center justify-center min-w-[120px]"
           >
-            {loading ? 'Tracking...' : 'Track'}
+            {loading ? (
+              <>
+                <Loader2 className="w-4 h-4 animate-spin mr-1.5" />
+                <span>Checking...</span>
+              </>
+            ) : order ? (
+              <>
+                <RefreshCw className="w-3.5 h-3.5 mr-1.5" />
+                <span>Refresh</span>
+              </>
+            ) : (
+              <span>Track</span>
+            )}
           </button>
         </form>
+
+        {justRefreshed && !errorMsg && (
+          <div className="mt-3 py-2.5 px-4 bg-[#10B981]/10 border border-[#10B981]/30 rounded-xl flex items-center justify-center space-x-2 text-xs font-semibold text-[#10B981] animate-in fade-in">
+            <CheckCircle2 className="w-4 h-4 text-[#10B981]" />
+            <span>Live status verified with logistics server: Up to date!</span>
+          </div>
+        )}
 
         {errorMsg && (
           <div className="mt-4 p-4 bg-[#3A1818] border border-[#5E2222] text-[#FCA5A5] text-xs rounded-2xl flex items-center space-x-2">
