@@ -3,7 +3,11 @@
 > **Intern Project Brief Deliverable**  
 > **Brand & Business Reference:** [@ds__wardrobe__ on Instagram](https://www.instagram.com/ds__wardrobe__/)  
 > **Project Type:** Modern Fashion / Clothing Decoupled E-Commerce Platform  
-> **Design Philosophy:** Premium Runway Aesthetic, Mobile-First UX, Pan-India Commerce Engine
+> **Design Philosophy:** Premium Runway Aesthetic, Mobile-First UX, Pan-India Commerce Engine  
+>  
+> 🌐 **Live Storefront:** [https://ds-wardrobe-ecommerce.vercel.app](https://ds-wardrobe-ecommerce.vercel.app)  
+> ⚙️ **Live Admin Portal:** [https://ds-wardrobe-ecommerce.vercel.app/admin](https://ds-wardrobe-ecommerce.vercel.app/admin) (Credentials: `admin@dswardrobe.com` / `admin123`)  
+> ⚡ **Cloud Commerce API:** [https://ds-wardrobe-ecommerce.onrender.com](https://ds-wardrobe-ecommerce.onrender.com)  
 
 ---
 
