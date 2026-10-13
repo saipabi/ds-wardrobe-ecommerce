@@ -178,7 +178,7 @@ docker compose up -d --build
 | **8** | Implement authentication, account & order tracking pages | ✅ Complete | `/account`, `/track-order` |
 | **9** | Implement admin operations (products, stock, orders, coupons) | ✅ Complete | `frontend/src/app/admin` |
 | **10** | Add validation, error handling, loading & empty states | ✅ Complete | Form validations & UI skeletons |
-| **11** | Add sample DS Wardrobe products for demonstration | ✅ Complete | `backend/src/data/seedData.ts` (8 products) |
+| **11** | Add sample DS Wardrobe products for demonstration | ✅ Complete | `backend/src/data/seedData.ts` (22 luxury couture products) |
 | **12** | Write comprehensive setup documentation | ✅ Complete | [`docs/setup_guide.md`](docs/setup_guide.md) & `README.md` |
 | **13** | Clean git version control commits | ✅ Complete | Git repository structure |
 
