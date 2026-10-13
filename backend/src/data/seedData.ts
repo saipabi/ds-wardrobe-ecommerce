@@ -321,9 +321,9 @@ export const SEED_PRODUCTS: Product[] = [
     description: "Designed for grand soirees and sangeet nights. The Sitara wrap gown catches light from every angle with thousands of micro metallic sequins hand-embellished onto sheer tulle.",
     category: "Festive & Fusion",
     collection: "Royal Heritage Edition",
-    thumbnail: "https://images.unsplash.com/photo-1518895949257-7621c3c786d7?auto=format&fit=crop&w=800&q=80",
+    thumbnail: "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?auto=format&fit=crop&w=800&q=80",
     images: [
-      "https://images.unsplash.com/photo-1518895949257-7621c3c786d7?auto=format&fit=crop&w=1000&q=80"
+      "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?auto=format&fit=crop&w=1000&q=80"
     ],
     tags: ["Festive", "Sequin", "Gown", "Wedding", "Statement"],
     material: "Metallic Micro-Sequins on Fine Nylon Tulle with Satin Lining",
@@ -354,9 +354,9 @@ export const SEED_PRODUCTS: Product[] = [
     description: "Runway authority tailored for the modern woman. Featuring peak satin lapels, padded structured shoulders, tortoise buttons, and slim tapered cigarette trousers.",
     category: "Co-ord Sets",
     collection: "Midnight Runway Drop",
-    thumbnail: "https://images.unsplash.com/photo-1548624149-f9b1859aa9d0?auto=format&fit=crop&w=800&q=80",
+    thumbnail: "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=800&q=80",
     images: [
-      "https://images.unsplash.com/photo-1548624149-f9b1859aa9d0?auto=format&fit=crop&w=1000&q=80"
+      "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=1000&q=80"
     ],
     tags: ["Co-ord", "Blazer", "Power Dressing", "Suit"],
     material: "Premium Suiting Gabardine with Duchess Satin Trim",
@@ -684,9 +684,9 @@ export const SEED_PRODUCTS: Product[] = [
     description: "A celebration of Indian royalty. Handcrafted in pure Chanderi silk with 32 kalis for maximum flare, detailed with geometric gota work and metallic churidar pants.",
     category: "Festive & Fusion",
     collection: "Royal Heritage Edition",
-    thumbnail: "https://images.unsplash.com/photo-1583391733975-dd2834b17c91?auto=format&fit=crop&w=800&q=80",
+    thumbnail: "https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=800&q=80",
     images: [
-      "https://images.unsplash.com/photo-1583391733975-dd2834b17c91?auto=format&fit=crop&w=1000&q=80"
+      "https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=1000&q=80"
     ],
     tags: ["Festive", "Anarkali", "Chanderi", "Gota Patti"],
     material: "Pure Handloom Chanderi Silk with Santoon Lining",
