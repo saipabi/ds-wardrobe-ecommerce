@@ -26,13 +26,20 @@ app.use((req: Request, _res: Response, next: NextFunction) => {
   next();
 });
 
+import { cacheService } from './services/cacheService';
+
 // Health check endpoint
 app.get('/api/health', (_req: Request, res: Response) => {
   res.json({
     status: 'healthy',
     service: 'DS Wardrobe Commerce Backend',
     version: '1.0.0',
-    timestamp: new Date().toISOString()
+    timestamp: new Date().toISOString(),
+    cache: cacheService.getStatus(),
+    database: {
+      driver: process.env.DATABASE_URL ? 'postgresql' : 'json_transactional',
+      storage: 'persistent'
+    }
   });
 });
 

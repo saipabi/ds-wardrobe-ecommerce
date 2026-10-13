@@ -110,31 +110,38 @@ Built with a **decoupled headless commerce architecture**, the application separ
 
 ---
 
+---
+
 ## ⚡ Quickstart & Local Setup
 
-### Prerequisites
-- Node.js v18.17+ or v20+
-- npm v9+
+You can run DS Wardrobe either **natively with Node.js** (zero external dependencies) or as a **fully containerized stack with Docker Compose** (Frontend + Backend + PostgreSQL + Redis).
 
-### 1. Start the Commerce Backend
+### Option A: Native Node.js Run (Recommended for Instant Local Dev)
 
 ```bash
+# 1. Start Commerce Backend API (Port 8000)
 cd backend
 cp .env.example .env
 npm install
 npm run dev
-```
-> Backend runs at `http://localhost:8000`. Health check: `http://localhost:8000/api/health`.
 
-### 2. Start the Frontend Storefront
-
-```bash
-cd frontend
+# 2. In a second terminal, start Next.js Storefront (Port 3000)
+cd ../frontend
 cp .env.example .env.local
 npm install
 npm run dev
 ```
+> Backend runs at `http://localhost:8000` (Health check: `/api/health`).  
 > Storefront runs at `http://localhost:3000`.
+
+### Option B: 1-Command Full Containerized Stack (Docker Compose)
+
+Runs the **Next.js Storefront**, **Express Commerce API**, **PostgreSQL 16**, and **Redis 7** in isolated containers:
+```bash
+cp .env.example .env
+docker compose up -d --build
+```
+> See [docs/deployment_guide.md](docs/deployment_guide.md) for complete Cloud and Kubernetes deployment instructions.
 
 ---
 
@@ -199,3 +206,4 @@ npm run dev
 - [Brand & Design Analysis Document](docs/design_analysis.md)
 - [Backend Evaluation & Architecture Matrix](docs/backend_evaluation.md)
 - [Developer Setup & Operation Guide](docs/setup_guide.md)
+- [Production Cloud & Docker Deployment Guide](docs/deployment_guide.md)
